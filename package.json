@@ -1,0 +1,24 @@
+{
+  "name": "timothy-calder-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Immersive WebGL portfolio — Michael Trent, Principal AI/ML Engineer",
+  "scripts": {
+    "dev": "node scripts/ensure-assets.mjs && vite --host 127.0.0.1 --port 5136 --strictPort --open http://127.0.0.1:5136/",
+    "remake": "node scripts/remake-from-reference.mjs",
+    "start": "npm run dev",
+    "preview": "vite preview --host 127.0.0.1 --port 5136 --strictPort",
+    "build": "node scripts/verify-complete.mjs",
+    "sync-assets": "node scripts/download-canonical.mjs && node scripts/download-sounds.mjs && node scripts/download-remaining.mjs",
+    "generate-michael-logo": "node scripts/generate-michael-logo.mjs",
+    "convert-logo-font": "node scripts/convert-font-to-typeface.mjs",
+    "download-aptos-font": "node scripts/download-aptos-font.mjs",
+    "personalize": "python scripts/fetch-company-logos.py && python scripts/personalize-portfolio.py && python scripts/apply-skill-textures.py",
+    "apply-skill-textures": "python scripts/apply-skill-textures.py"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0",
+    "three": "^0.184.0",
+    "vite": "^6.2.0"
+  }
+}

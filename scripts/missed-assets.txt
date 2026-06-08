@@ -1,0 +1,10 @@
+assets/textures/storyAirdropPostAvatars/4.png
+assets/textures/storyAirdropPostAvatars/5.png
+assets/audios/ambient.mp3
+assets/audios/music.mp3
+assets/audios/loop.mp3
+assets/audios/soundtrack.mp3
+assets/audios/whoosh.mp3
+assets/audios/intro.mp3
+assets/audios/main.mp3
+assets/audios/theme.mp3

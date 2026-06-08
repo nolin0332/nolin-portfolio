@@ -1,0 +1,226 @@
+{
+  "profile": {
+    "name": "Michael Trent",
+    "title": "Principal AI/ML Engineer",
+    "tagline": "Principal AI/ML Engineer with 12+ years delivering RAG-based LLM systems, agentic AI workflows, and production MLOps across healthcare, energy, and regulated enterprise environments.",
+    "email": "michael.trent.dev@gmail.com",
+    "phone": "+1 (972) 301 7727",
+    "linkedin": "https://www.linkedin.com/in/michael-trent-878b5068/",
+    "location": "Parker, CO"
+  },
+  "contactForm": {
+    "web3formsAccessKey": "",
+    "formsubmitFormId": "41433ff4e9e5699c0ad60a33d57be77a"
+  },
+  "intro_hero": "Principal AI/ML Engineer · RAG, Agentic AI &amp; MLOps",
+  "leaderboard": {
+    "names": ["Python", "PyTorch", "AWS", "LLM", "Azure AI"],
+    "scores": [98, 96, 94, 92, 90],
+    "icons": ["python", "pytorch", "amazonwebservices", "langchain", "azure"]
+  },
+  "quests": {
+    "titleHtml": "LLM-Integrated<br class=\"keep-mobile\">Pipelines",
+    "number": "Python",
+    "desc": "RAG &amp; LLM pipelines",
+    "points": "12+ yrs"
+  },
+  "xp": {
+    "titleHtml": "Core Skills",
+    "items": [
+      "Python · TypeScript · SQL · Bash",
+      "RAG · LLMs · LangChain · Fine-tuning",
+      "PyTorch · TensorFlow · XGBoost · Transformers",
+      "AWS SageMaker · Bedrock · Azure ML · OpenAI",
+      "MLflow · Airflow · Docker · Kubernetes",
+      "FastAPI · Django · React · REST APIs",
+      "PySpark · Snowflake · Vector DBs · FAISS",
+      "GenAI Architecture · MLOps · Regulated AI"
+    ]
+  },
+  "quests_cards": {
+    "cards": [
+      { "texture": "quest_2_card.png", "skill": "Python", "icon": "python", "color": "#3776AB" },
+      { "texture": "quest_3_card.png", "skill": "LLM", "icon": "langchain", "color": "#1C1C1C", "logo": "rag" },
+      { "texture": "quest_1_card_1.png", "skill": "PyTorch", "icon": "pytorch", "color": "#EE4C2C" },
+      { "texture": "quest_1_card_2.png", "skill": "AWS", "icon": "amazonwebservices", "color": "#FF9900" },
+      { "texture": "quest_1_card_3.png", "skill": "Azure AI", "icon": "azure", "color": "#0078D4" }
+    ]
+  },
+  "jobs": {
+    "cards": [
+      { "texture": "card1.png", "icon": "python", "color": "#3776AB", "label": "Healthcare RAG" },
+      { "texture": "card2.png", "icon": "tensorflow", "color": "#FF6F00", "label": "Energy Regulatory AI" },
+      { "texture": "card3.png", "icon": "pytorch", "color": "#EE4C2C", "label": "Grid Forecasting" }
+    ]
+  },
+  "tools": {
+    "cards": [
+      { "texture": "card-like.jpg", "icon": "python", "color": "#3776AB", "label": "Python" },
+      { "texture": "card-comment.jpg", "icon": "amazonwebservices", "color": "#FF9900", "label": "AWS" },
+      { "texture": "card-repost.jpg", "icon": "azure", "color": "#0078D4", "label": "Azure" },
+      { "texture": "card-follow.jpg", "icon": "langchain", "color": "#1C3C3C", "label": "LangChain" }
+    ]
+  },
+  "skills_cats": [
+    { "label": "Languages", "items": "Python · TypeScript · SQL · R · Bash · Java" },
+    { "label": "AI &amp; Data", "items": "LLMs (OpenAI, Anthropic, Gemini, Llama) · RAG · LangChain · PyTorch · scikit-learn · NumPy · Pandas" },
+    { "label": "Databases", "items": "PostgreSQL · MySQL · SQL Server · DynamoDB · MongoDB · Redis · Pinecone · FAISS" },
+    { "label": "Frameworks", "items": "FastAPI · Django · Flask · Node.js · React · Spring Boot" },
+    { "label": "Cloud &amp; DevOps", "items": "AWS · GCP · Azure · Docker · Kubernetes · Terraform · MLflow · Airflow · Jenkins" },
+    { "label": "Testing", "items": "PyTest · Jest · Cypress · JUnit · Mockito · CI/CD" }
+  ],
+  "pre_end_cards": [
+    {
+      "titleHtml": "Design<br>RAG Systems",
+      "descHtml": "Architect healthcare-grade RAG and LangGraph multi-agent workflows on Azure OpenAI and AWS Bedrock with guardrails for regulated environments."
+    },
+    {
+      "titleHtml": "Build<br>MLOps Pipelines",
+      "descHtml": "Build ingestion, embedding, and retrieval pipelines with SageMaker, Azure ML, MLflow, and CI/CD for versioned model deployment and observability."
+    },
+    {
+      "titleHtml": "Ship at<br>Cloud Scale",
+      "descHtml": "Deploy containerized inference on AKS/EKS with monitoring for LLM latency, retrieval quality, and drift across 10M+ document corpora."
+    }
+  ],
+  "sections": {
+    "story-gamification-hero": {
+      "titleHtml": "Principal AI/ML<br>Engineer",
+      "descHtml": "Technical lead with 12+ years in enterprise AI, ML, and Generative AI across healthcare, energy, and regulated domains.<br>Delivered RAG-based LLM systems, agentic workflows, and production MLOps on AWS, Azure, and GCP — cutting manual review 30–40% and improving decision accuracy up to 35%."
+    },
+    "story-gamification-battle-pass": {
+      "titleHtml": "RAG &amp; LLM<br class=\"keep-mobile\">Systems",
+      "descHtml": "Architected healthcare clinical assistants on Azure OpenAI and energy regulatory RAG on AWS Bedrock — semantic search across 10M+ documents."
+    },
+    "story-gamification-quests": {
+      "titleHtml": "LLM-Integrated<br class=\"keep-mobile\">Pipelines"
+    },
+    "story-gamification-ranks": {
+      "titleHtml": "Deep<br class=\"keep-mobile\">Learning",
+      "descHtml": "TensorFlow, PyTorch, XGBoost, transformers, and time-series forecasting for grid, energy, and clinical AI workloads."
+    },
+    "story-gamification-chests": {
+      "titleHtml": "Certifications",
+      "descHtml": "DataCamp — Python &amp; machine learning credentials.<br><br><b>Cleaning Data in Python</b><br><b>Data Types for Data Science in Python</b><br><b>Supervised Learning with scikit-learn</b>"
+    },
+    "story-gamification-leaderboard": {
+      "titleHtml": "Top Skills",
+      "descHtml": "Python, RAG/LLM engineering, PyTorch, AWS &amp; Azure MLOps, vector search, and production GenAI — 12+ years in regulated environments."
+    },
+    "story-rewards-hero": {
+      "logo": "booz-allen.png",
+      "logoAlt": "Booz Allen Hamilton",
+      "titleHtml": "Booz Allen",
+      "descHtml": "Federal healthcare &amp; energy GenAI — RAG, agentic AI, and production MLOps for regulated enterprise clients.",
+      "metaChips": ["Principal AI/ML Engineer", "Team Lead", "Denver, CO", "Apr 2023 – Apr 2026"],
+      "bullets": [
+        "Led multi-team delivery of LangChain and LangGraph workflows on Azure OpenAI and AWS Bedrock",
+        "Architected vector search with FAISS, Pinecone, and Azure AI Search across 10M+ document corpora",
+        "Built FastAPI services and guardrailed retrieval for healthcare clinical decision support",
+        "Deployed CI/CD model pipelines with MLflow, drift monitoring, and retrieval-quality observability",
+        "Cut manual clinical review <strong>35%</strong> with production healthcare RAG across EHR notes and medical literature",
+        "Improved decision accuracy <strong>up to 35%</strong> and accelerated regulatory research <strong>40%</strong> on energy programs"
+      ]
+    },
+    "story-rewards-referral": {
+      "logo": "booz-allen.png",
+      "logoAlt": "Booz Allen Hamilton",
+      "titleHtml": "Key Programs",
+      "descHtml": "Hands-on technical lead across Booz Allen's federal AI programs.",
+      "metaChips": ["Federal AI Programs", "Healthcare · Energy · Platform"],
+      "bullets": [
+        "Healthcare: LLM clinical assistants with LangChain, Azure AI Search &amp; FastAPI — guardrailed retrieval over EHR and literature",
+        "Energy: regulatory RAG on AWS Bedrock with semantic search over 10M+ filings and compliance documents",
+        "Agentic AI: LangGraph multi-agent workflows with policy guardrails for regulated enterprise clients",
+        "Platform: retrieval-quality observability, prompt versioning, model evaluation &amp; responsible-AI controls"
+      ]
+    },
+    "story-rewards-cashback": {
+      "logo": "pa-consulting.png",
+      "logoAlt": "PA Consulting",
+      "titleHtml": "PA Consulting",
+      "descHtml": "Renewable energy and electricity-market analytics — forecasting, pricing models, and early GenAI retrieval.",
+      "metaChips": ["Principal ML Engineer", "Jan 2021 – Apr 2023", "Energy &amp; Utilities"],
+      "bullets": [
+        "Built wind, solar &amp; grid forecasting pipelines on AWS SageMaker and PyTorch for trading and operations teams",
+        "Developed electricity price &amp; demand models with PySpark, Azure ML, and time-series feature engineering",
+        "Prototyped early GPT-3 + FAISS retrieval for energy-market intelligence and unstructured regulatory data",
+        "Shipped one of the firm's <strong>first production GenAI retrieval systems</strong> — turning unstructured energy data into actionable forecasts"
+      ]
+    },
+    "story-rewards-staking": {
+      "logo": "lone-tree-energy.png",
+      "logoAlt": "Lone Tree Energy",
+      "titleHtml": "Lone Tree Energy",
+      "descHtml": "Utility analytics and regulatory intelligence — AMI-scale forecasting, NLP, and production ML platforms.",
+      "metaChips": ["Staff ML Engineer", "Jul 2013 – Jan 2021", "Denver, CO"],
+      "bullets": [
+        "Scaled AMI load forecasting across <strong>millions</strong> of smart-meter endpoints with distributed PySpark pipelines",
+        "Built NLP document intelligence for regulatory filings, compliance workflows, and unstructured utility data",
+        "Containerized production ML with MLflow, Airflow, and AWS — versioning, monitoring, and automated retraining",
+        "Drove <strong>$1M+</strong> in client recoveries and daily processing of millions of AMI records for billing accuracy"
+      ]
+    },
+    "story-rewards-community": {
+      "logo": "cu-boulder.png",
+      "logoAlt": "University of Colorado Boulder",
+      "titleHtml": "Research &amp; Education",
+      "descHtml": "Graduate research in computational neuroscience — the foundation for 12+ years in production ML and GenAI.",
+      "metaChips": ["M.S. Computational Neuroscience", "CU Boulder", "2011–2013"],
+      "bullets": [
+        "Computational neuroscience research bridging machine learning and biomedical signal analysis",
+        "Published methods for time-series forecasting and pattern detection in neural recording data",
+        "M.S. Business Analytics — University of Colorado Denver (2016–2020): enterprise analytics &amp; decision science",
+        "Ph.D. in AI (in progress) — continuous research in agentic AI, RAG evaluation, and production LLM deployment"
+      ]
+    },
+    "story-airdrops-post-hero": {
+      "titleHtml": "Tech<br>Stack",
+      "descHtml": "Python, LangChain, PyTorch, SageMaker, Bedrock, Azure OpenAI, MLflow, Airflow,<br>Docker, Kubernetes, vector DBs, and full-stack ML platform delivery."
+    },
+    "story-airdrops-post-battlepass": {
+      "titleHtml": "Languages &amp; Tools"
+    },
+    "story-airdrops-post-seasons": {
+      "titleHtml": "Impact",
+      "descHtml": "10M+ documents indexed · 30–40% less manual review · up to 35% better decision accuracy · 40% faster regulatory research."
+    },
+    "story-airdrops-pre-hero": {
+      "titleHtml": "Education",
+      "descHtml": "University of Colorado — analytics, neuroscience, mathematics, and doctoral AI research.",
+      "education": [
+        {
+          "logo": "cu-denver.png",
+          "school": "University of Colorado Denver",
+          "degree": "M.S. Business Analytics",
+          "years": "2016–2020"
+        },
+        {
+          "logo": "cu-boulder.png",
+          "school": "University of Colorado Boulder",
+          "degree": "M.S. Computational Neuroscience",
+          "years": "2011–2013"
+        },
+        {
+          "logo": "cu-boulder.png",
+          "school": "University of Colorado Boulder",
+          "degree": "B.S. Mathematics",
+          "years": "2004–2008"
+        }
+      ]
+    },
+    "story-airdrops-pre-engagement": {
+      "titleHtml": "Always<br>Learning",
+      "descHtml": "Continuously exploring new AI, LLM, and cloud technologies — staying hands-on with emerging tools to grow as a technical leader and deliver greater impact."
+    }
+  },
+  "end_hero": {
+    "titleHtml": "Let's Build<br>Something&nbsp;Great<br>Together!",
+    "descHtml": ""
+  },
+  "seasons": [
+    { "season": "GenAI & MLOps", "sprint": "Current" },
+    { "season": "M.S. Analytics", "sprint": "2016–2020" },
+    { "season": "M.S. Neuroscience", "sprint": "2011–2013" }
+  ]
+}

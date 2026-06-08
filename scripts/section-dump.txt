@@ -1,0 +1,108 @@
+
+============================================================
+story-gamification-hero
+============================================================
+id="story-gamification-hero" class="story-feature"> <div class="story-feature-content"> <div class="story-feature-chapter">Chapter 01: About</div> <h1 class="story-feature-title">Engineering<br>Systems at Scale</h1> <h4 class="story-feature-desc">9+ years building large-scale distributed systems and<br>production backend platforms.</h4> <img class="story-feature-image-shadow" src="assets/images/shadow.png" alt="bg-shadow"> <div class="scroll-down-cta">  <svg viewbox="0 0 16 32" style="color: #ffdbb7"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> </div> </div> <div 
+
+============================================================
+story-gamification-battle-pass
+============================================================
+id="story-gamification-battle-pass" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Distributed<br class="keep-mobile">System Design</h2> <h4 class="story-feature-desc">Led architecture for high-throughput services processing 100K+ documents per day in regulated, compliance-critical workflows.</h4> </div> </div> </div> <div 
+
+============================================================
+story-gamification-quests
+============================================================
+id="story-gamification-quests" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">LLM-Integrated<br class="keep-mobile">Pipelines</h2> <div> <div 
+
+============================================================
+story-gamification-quests-quest-number
+============================================================
+id="story-gamification-quests-quest-number">Impact</div> <div 
+
+============================================================
+story-gamification-xp
+============================================================
+id="story-gamification-xp" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Core Skills</h2> <div class="story-feature-list bullet-list"> <div>Distributed System Design</div> <div>LLM Data Pipelines</div> <div>Performance C++</div> <div>Cloud-Native Reliability</div> </div> </div> </div> </div> <div 
+
+============================================================
+story-gamification-ranks
+============================================================
+id="story-gamification-ranks" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Performance C++</h2> <h4 class="story-feature-desc">Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.</h4> </div> </div> </div> <div 
+
+============================================================
+story-gamification-chests
+============================================================
+id="story-gamification-chests" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Certifications</h2> <h4 class="story-feature-desc">Certified Scrum Master & Professional Scrum Product Owner I (PSPO I), plus an International Baccalaureate Diploma.</h4> </div> </div> </div> <div 
+
+============================================================
+story-gamification-leaderboard-ladder
+============================================================
+id="story-gamification-leaderboard-ladder"></div> <h2 class="story-feature-title">Top Skills</h2> <h4 class="story-feature-desc">Distributed systems, performance C++, and LLM-integrated data platforms — 9+ years in production.</h4> </div> <div class="scroll-down-cta has-label"> <p class="scroll-down-cta-text">chapter 02:<br>experience</p> <svg viewbox="0 0 16 32" style="color: #ff9933"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> <img class="story-feature-image-shadow" src="assets/images/shadow.png" alt="bg-shadow"> </div> </div> </div> <div 
+
+============================================================
+story-rewards-hero
+============================================================
+id="story-rewards-hero" class="story-feature"> <div class="story-feature-content"> <div class="story-feature-chapter">Chapter 02: Experience</div> <h1 class="story-feature-title">Ochsner<br>Health</h1> <h4 class="story-feature-desc">Software Engineer · Aug 2021 – Apr 2026 · New Orleans, LA</h4> <div class="scroll-down-cta">  <svg viewbox="0 0 16 32" style="color: #ffdbb7"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> </div> </div> <div 
+
+============================================================
+story-rewards-referral
+============================================================
+id="story-rewards-referral" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Distributed Document Processing</h2> <h4 class="story-feature-desc">Led backend architecture for a 100K+ daily-document pipeline; raised structured extraction accuracy from 78% to 95%+ with layered validation and a multi-provider LLM routing framework (OpenAI, Anthropic, Gemini, Llama).</h4> </div> </div> </div> <div 
+
+============================================================
+story-rewards-cashback
+============================================================
+id="story-rewards-cashback" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Venture For<br>America</h2> <h4 class="story-feature-desc">Senior Software Engineer · Feb 2020 – Aug 2021</h4> <div class="story-feature-list bullet-list"> <div>Distributed Kafka automation in Java & Go</div> <div>Self-healing rebalance & anomaly detection</div> <div>Cut manual ops intervention by 60%+</div> </div> </div> </div> </div> <div 
+
+============================================================
+story-rewards-staking
+============================================================
+id="story-rewards-staking" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Camberline<br>Technologies</h2> <h4 class="story-feature-desc">Member of Technical Staff III · Oct 2018 – Jan 2021 · Remote</h4> <div class="story-feature-list bullet-list"> <div>High-performance C++ data/control plane</div> <div>Multi-tenant network virtualization</div> <div>Throughput & memory optimization</div> </div> </div> </div> </div> <div 
+
+============================================================
+story-rewards-community
+============================================================
+id="story-rewards-community" class="story-feature"> <div class="story-feature-content"> <h2 class="story-feature-title">Early Career<br>& Leadership</h2> <h4 class="story-feature-desc">Product Development Intern at MachineMetrics (industrial sensors, data automation). Co-Founder & VP of the Clean Tech Club at Boston University.</h4> <img class="story-feature-image-shadow" src="assets/images/shadow.png" alt="bg-shadow"> <div class="scroll-down-cta has-label"> <p class="scroll-down-cta-text">chapter 03:<br>skills</p> <svg viewbox="0 0 16 32" style="color: #ff9933"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> </div> </div> </div> <div 
+
+============================================================
+story-airdrops-post-hero
+============================================================
+id="story-airdrops-post-hero" class="story-feature"> <div class="story-feature-content"> <div class="story-feature-chapter">Chapter 03: Skills</div> <h1 class="story-feature-title">Technical<br>Toolbox</h1> <h4 class="story-feature-desc">Distributed systems, streaming, and LLM-integrated<br>data platforms at production scale.</h4> <div class="scroll-down-cta">  <svg viewbox="0 0 16 32" style="color: #ffdbb7"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> </div> </div> <div 
+
+============================================================
+story-airdrops-post-battlepass
+============================================================
+id="story-airdrops-post-battlepass" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Languages & Tools</h2> <div class="skills-cats"><div class="skill-cat"><span class="sc-label">Languages</span><span class="sc-items">Python · Java · C# · Go · C++ · JS/TS · SQL</span></div><div class="skill-cat"><span class="sc-label">AI &amp; Data</span><span class="sc-items">LLMs (OpenAI, Anthropic, Gemini, Llama) · Tesseract OCR · NLTK · scikit-learn · NumPy · Pandas</span></div><div class="skill-cat"><span class="sc-label">Databases</span><span class="sc-items">PostgreSQL · MySQL · SQL Server · DynamoDB · MongoDB · Redis</span></div><div class="skill-cat"><span class="sc-label">Frameworks</span><span class="sc-items">Spring Boot · Django · FastAPI · Node.js · ASP.NET Core · Gin · React · Redux</span></div><div class="skill-cat"><span class="sc-label">Cloud &amp; DevOps</span><span class="sc-items">AWS · GCP · Azure · Docker · Kubernetes · Terraform · Jenkins · Helm · Prometheus · Grafana</span></div><div class="skill-cat"><span class="sc-label">Testing</span><span class="sc-items">Jest · Mocha · Cypress · JUnit · PyTest · Mockito</span></div></div> </div> </div> </div> <div 
+
+============================================================
+story-airdrops-post-seasons-list
+============================================================
+id="story-airdrops-post-seasons-list"></div> <h2 class="story-feature-title"> <div 
+
+============================================================
+story-airdrops-pre-hero
+============================================================
+id="story-airdrops-pre-hero" class="story-feature"> <div class="story-feature-content"> <div class="story-feature-chapter">Chapter 03: Education</div> <h1 class="story-feature-title">Boston<br>University</h1> <h4 class="story-feature-desc">Master's Degree, Computer Science · 2013 – 2018</h4> <img class="story-feature-image-shadow" src="assets/images/shadow.png" alt="bg-shadow"> <div class="scroll-down-cta">  <svg viewbox="0 0 16 32" style="color: #ffdbb7"> <path class="st0" d="M15,1L8,6L1,1"></path> <path class="st1" d="M15,6l-7,5L1,6"></path> <path class="st0" d="M15,11l-7,5l-7-5"></path> <path class="st0" d="M15,16l-7,5l-7-5"></path> <path class="st1" d="M15,21l-7,5l-7-5"></path> <path class="st0" d="M15,26l-7,5l-7-5"></path> </svg> </div> </div> </div> <div 
+
+============================================================
+story-airdrops-pre-engagement
+============================================================
+id="story-airdrops-pre-engagement" class="story-feature"> <div class="story-feature-content"> <div> <h2 class="story-feature-title">Always<br>Learning</h2> <h4 class="story-feature-desc">Fluent in English & Spanish, working French, elementary Italian — collaborating across global teams.</h4> </div> <img class="story-feature-image-shadow" src="assets/images/shadow.png" alt="bg-shadow"> </div> </div> <div 
+
+============================================================
+story-airdrops-pre-end-logo-coin
+============================================================
+id="story-airdrops-pre-end-logo-coin"> <div></div> </div> </div> </div> </div> </div> </div> <div id="end" class="section"> <div id="end-hero" class="story-feature"> <div class="story-feature-content"> <h1 class="story-feature-title">Let's Build<br>Something Great</h1> <h4 class="story-feature-desc">Miami, FL · Open to senior engineering roles.<br>Reach me at <b>pzscvserpw080@hotmail.com</b>.</h4> <a id="end-hero-button" href="https://discord.com/users/1504060746160537782" target="_blank"> <div id="end-hero-button-bg"></div> <div id="end-hero-button-front"> <span class="button-text-wrapper"> <span class="button-text-01">CONNECT</span> </span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none"> <rect x="0" y="0" width="20" height="20" rx="10" fill="#FF421B"></rect> <path class="button-arrow-01" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path class="button-arrow-02" d="M7,13l6-6 M13,7H8.108 M13,7v4.892" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </div> </a> <div id="end-hero-ext-links"> <!-- <a class="end-hero-social-link" href="/">
+                  <span class="end-hero-social-link-bg"></span>
+
+                  <span class="end-hero-social-link-front">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <mask id="mask0_2916_11441" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                          <path d="M19.7396 0.609375H0.957031V19.392H19.7396V0.609375Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_2916_11441)">
+                          <path d="M15.7813 4.75273C14.753 4.27271 13.6673 3.93217 12.5522 3.73981C12.3996 4.01794 12.2615 4.3041 12.1385 4.59709C10.9507 4.41459 9.74268 4.41459 8.55481 4.59709C8.43178 4.30413 8.2937 4.01797 8.14117 3.73981C7.02529 3.9338 5.93894 4.27515 4.90954 4.75524C2.86592 7.83795 2.31193 10.8441 2.58893 13.8076C3.78572 14.7091 5.12528 15.3947 6.54936 15.8347C6.87002 15.395 7.15377 14.9285 7.39759 14.4402C6.93449 14.2638 6.48752 14.0463 6.06185 13.79C6.17388 13.7071 6.28344 13.6218 6.38932 13.539C7.62792 14.1328 8.97979 14.4407 10.3485 14.4407C11.7173 14.4407 13.0691 14.1328 14.3077 13.539C14.4148 13.6281 14.5244 13.7134 14.6352 13.79C14.2087 14.0467 13.7609 14.2647 13.297 14.4414C13.5405 14.9295 13.8243 15.3956 14.1452 15.8347C15.5705 15.3965 16.9111 14.7112 18.1081 13.8088C18.4331 10.3721 17.5529 7.39362 15.7813 4.75273ZM7.74845 11.985C6.97655 11.985 6.33884 11.2709 6.33884 10.3922C6.33884 9.51361 6.95439 8.79314 7.74599 8.79314C8.53758 8.79314 9.17036 9.51361 9.15682 10.3922C9.14328 11.2709 8.53512 11.985 7.74845 11.985ZM12.9486 11.985C12.1755 11.985 11.5402 11.2709 11.5402 10.3922C11.5402 9.51361 12.1558 8.79314 12.9486 8.79314C13.7414 8.79314 14.3693 9.51361 14.3557 10.3922C14.3422 11.2709 13.7353 11.985 12.9486 11.985Z" fill="white"/>
+                        </g>
+                    </svg>
+                  </span>
+                </a> -->  </div> </div> </div> </div> </div>  </div> <div id="scroll-indicator"> <div id="scroll-indicator-bar"></div> </div> <button id="mobile-navigation-button"> <img src="assets/svg/navigation/play.svg" alt=""> </button> <div id="navigation"> <svg id="navigation-current-arrow" xmlns="http://www.w3.org/2000/s

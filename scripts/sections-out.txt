@@ -1,0 +1,156 @@
+﻿
+=== story-gamification ===
+TITLE: Engineering
+DESC:  9+ years building large-scale distributed systems and
+
+=== story-gamification-hero ===
+TITLE: Engineering
+DESC:  9+ years building large-scale distributed systems and
+
+=== story-gamification-battle-pass ===
+TITLE: Distributed
+DESC:  Led architecture for high-throughput services processing 100K+ documents per day in regulated, compliance-critical workflows.
+
+=== story-gamification-quests ===
+TITLE: LLM-Integrated
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-text-wrapper ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-quest-number ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-quest-desc ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-points ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-counter ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-counter-1 ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-counter-2 ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-quests-counter-3 ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-xp ===
+TITLE: Core Skills
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-ranks ===
+TITLE: Performance C++
+DESC:  Distributed system design, LLM data pipelines, performance C++, and cloud-native reliability.
+
+=== story-gamification-chests ===
+TITLE: Certifications
+DESC:  Certified Scrum Master & Professional Scrum Product Owner I (PSPO I), plus an International Baccalaureate Diploma.
+
+=== story-gamification-leaderboard ===
+TITLE: Top Skills
+DESC:  Distributed systems, performance C++, and LLM-integrated data platforms ΓÇö 9+ years in production.
+
+=== story-gamification-leaderboard-content-wrapper ===
+TITLE: Top Skills
+DESC:  Distributed systems, performance C++, and LLM-integrated data platforms ΓÇö 9+ years in production.
+
+=== story-gamification-leaderboard-ladder ===
+TITLE: Top Skills
+DESC:  Distributed systems, performance C++, and LLM-integrated data platforms ΓÇö 9+ years in production.
+
+=== story-rewards ===
+TITLE: Ochsner
+DESC:  Software Engineer ┬╖ Aug 2021 ΓÇô Apr 2026 ┬╖ New Orleans, LA
+
+=== story-rewards-hero ===
+TITLE: Ochsner
+DESC:  Software Engineer ┬╖ Aug 2021 ΓÇô Apr 2026 ┬╖ New Orleans, LA
+
+=== story-rewards-referral ===
+TITLE: Distributed Document Processing
+DESC:  Led backend architecture for a 100K+ daily-document pipeline; raised structured extraction accuracy from 78% to 95%+ with layered validation and a multi-provider LLM routing framework (OpenAI, Anthrop
+
+=== story-rewards-cashback ===
+TITLE: Venture For
+DESC:  Senior Software Engineer ┬╖ Feb 2020 ΓÇô Aug 2021
+
+=== story-rewards-staking ===
+TITLE: Camberline
+DESC:  Member of Technical Staff III ┬╖ Oct 2018 ΓÇô Jan 2021 ┬╖ Remote
+
+=== story-rewards-community ===
+TITLE: Early Career
+DESC:  Product Development Intern at MachineMetrics (industrial sensors, data automation). Co-Founder & VP of the Clean Tech Club at Boston University.
+
+=== story-airdrops ===
+TITLE: Technical
+DESC:  Distributed systems, streaming, and LLM-integrated
+
+=== story-airdrops-post-hero ===
+TITLE: Technical
+DESC:  Distributed systems, streaming, and LLM-integrated
+
+=== story-airdrops-post-battlepass ===
+TITLE: Languages & Tools
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-post-seasons ===
+TITLE: 
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-post-seasons-list ===
+TITLE: 
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-post-seasons-title ===
+TITLE: Boston
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-post-seasons-number-wrapper ===
+TITLE: Boston
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-post-seasons-number ===
+TITLE: Boston
+DESC:  100K+ documents/day in production ┬╖ structured extraction accuracy 78% ΓåÆ 95%+ ┬╖ 60%+ less manual ops ┬╖ trillion-message streaming reliability.
+
+=== story-airdrops-pre-hero ===
+TITLE: Boston
+DESC:  Master's Degree, Computer Science ┬╖ 2013 ΓÇô 2018
+
+=== story-airdrops-pre-engagement ===
+TITLE: Always
+DESC:  Fluent in English & Spanish, working French, elementary Italian ΓÇö collaborating across global teams.
+
+=== story-airdrops-pre-end ===
+TITLE: Let's Build
+DESC:  Miami, FL ┬╖ Open to senior engineering roles.
+
+=== story-airdrops-pre-end-logo-rank ===
+TITLE: Let's Build
+DESC:  Miami, FL ┬╖ Open to senior engineering roles.
+
+=== story-airdrops-pre-end-logo-xp ===
+TITLE: Let's Build
+DESC:  Miami, FL ┬╖ Open to senior engineering roles.
+
+=== story-airdrops-pre-end-logo-coin ===
+TITLE: Let's Build
+DESC:  Miami, FL ┬╖ Open to senior engineering roles.
+
+MATCH <title>([^<]+)</title>: Julio Membreno | Senior Software Engineer
+
+MATCH id="footer-hero-button"[^>]*>(:  

@@ -1,0 +1,43 @@
+{
+  "source_dir": "../.cursor-assets",
+  "logos": {
+    "aws": "image-1b6f2dbd-d781-4088-bd80-ff60c00e456c.png",
+    "python": "image-53ee3fc1-d51c-43d1-8436-7a900133f7a4.png",
+    "langchain": "image-f0d246d4-ed64-4f8e-a795-7cbf42c2464c.png",
+    "azure": "image-c210966b-4c69-4358-82df-cfc422447c4c.png",
+    "energy-ml": "image-b870435c-1dc8-4e8f-9b82-45cfc3ac48aa.png",
+    "healthcare-rag": "image-d390c8d5-e807-4ea8-be16-bf80ca53f690.png",
+    "grid-forecasting": "image-91dd77ac-7c95-4c0b-a403-146fcba1e80a.png",
+    "azure-ai": "image-c210966b-4c69-4358-82df-cfc422447c4c.png",
+    "rag": "image-1680c385-3fd5-4cef-9a24-e5cd466d7e07.png",
+    "pytorch": "images-db739486-892d-4643-a775-eb6c0714820e.png",
+    "aws-mlops": "image-4f0ad015-8741-481c-baa3-d3cb4419e834.png"
+  },
+  "textures": {
+    "leaderboard": {
+      "1.png": "python",
+      "2.png": "pytorch",
+      "3.png": "aws",
+      "4.png": "rag",
+      "5.png": "azure-ai"
+    },
+    "quests": {
+      "quest_2_card.png": "python",
+      "quest_1_card_1.png": "pytorch",
+      "quest_1_card_2.png": "aws",
+      "quest_3_card.png": "rag",
+      "quest_1_card_3.png": "azure-ai"
+    },
+    "jobs": {
+      "card1.png": "healthcare-rag",
+      "card2.png": "energy-ml",
+      "card3.png": "grid-forecasting"
+    },
+    "tools": {
+      "card-like.jpg": "python",
+      "card-comment.jpg": "aws",
+      "card-repost.jpg": "azure",
+      "card-follow.jpg": "langchain"
+    }
+  }
+}

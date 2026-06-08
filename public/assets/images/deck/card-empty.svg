@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="250px" height="342px" viewBox="0 0 250 342" enable-background="new 0 0 250 342" xml:space="preserve">
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.2" stroke-dasharray="2,4" d="
+	M241,341H9c-4.418,0-8-3.582-8-8V9c0-4.418,3.582-8,8-8h232c4.418,0,8,3.582,8,8v324C249,337.418,245.418,341,241,341z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="125" y1="333" x2="125" y2="-190.334" gradientTransform="matrix(1 0 0 -1 0 344)">
+	<stop  offset="0" style="stop-color:#B4C3CE"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" fill-opacity="0.01" d="M17,11h216c3.314,0,6,2.686,6,6v308c0,3.314-2.686,6-6,6H17
+	c-3.314,0-6-2.686-6-6V17C11,13.686,13.686,11,17,11z"/>
+<circle opacity="0.2" fill="#FFFFFF" enable-background="new    " cx="227" cy="23" r="2"/>
+<circle opacity="0.2" fill="#FFFFFF" enable-background="new    " cx="23" cy="319" r="2"/>
+<circle opacity="0.2" fill="#FFFFFF" enable-background="new    " cx="227" cy="319" r="2"/>
+<circle opacity="0.2" fill="#FFFFFF" enable-background="new    " cx="23" cy="23" r="2"/>
+<path opacity="0.1" fill="#FFFFFF" enable-background="new    " d="M143.738,176.528c-1.334,1.355-3.123,2.133-4.997,2.133h-27.454
+	c-1.874,0-3.634-0.75-4.997-2.133c-1.334-1.354-2.072-3.169-2.072-5.071c0-1.902,0.738-3.717,2.072-5.072
+	c1.335-1.354,3.123-2.103,4.997-2.103h27.454c1.874,0,3.663,0.749,4.997,2.103c1.335,1.355,2.101,3.17,2.101,5.072
+	C145.839,173.359,145.101,175.174,143.738,176.528z M152,171.486c0-7.435-5.962-13.486-13.259-13.486h-27.454
+	C103.991,158,98,164.051,98,171.486c0,7.434,5.962,13.456,13.259,13.456h27.454c2.839,0,5.479-0.922,7.666-2.478V185h5.593v-12.65
+	C151.972,172.062,152,171.774,152,171.486z"/>
+<path opacity="0.1" fill="none" stroke="#FFFFFF" stroke-width="1.5" enable-background="new    " d="M130.69,96.503l57.241,32.273
+	H188c3.724,2.073,6,6.012,6,10.228v63.992c0,4.216-2.276,8.155-6,10.228l-57.241,32.273c-3.587,2.004-7.931,2.004-11.518,0
+	L62,213.224c-3.724-2.073-6-6.012-6-10.228v-63.992c0-4.216,2.276-8.155,6-10.228l57.172-32.273
+	C122.759,94.499,127.103,94.499,130.69,96.503z"/>
+</svg>
