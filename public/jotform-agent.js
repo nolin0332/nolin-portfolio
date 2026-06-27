@@ -2,23 +2,35 @@
   // JotForm conversational agent (chatbot widget)
   // Share URL: https://www.jotform.com/agent/019f01f41cb1710687a41b71d271cc48dd5d
   const AGENT_ID = "019f01f41cb1710687a41b71d271cc48dd5d";
-  // From this agent's Jotform embed theme (chat panel background).
   const AGENT_CHAT_BG = "#F4FEFF";
   const FOOTER_TEXT_COLOR = "#00433A";
   const CONTACT_LINE = "CTO: Molly Youngblood : +1 (904) 314-4057";
   const DEFAULT_RADIUS = "20px";
   const COVER_ID = "jf-jotform-branding-cover";
-  const MIN_COVER_HEIGHT = 48;
-  const COVER_OVERLAP_UP = 14;
+  // From widget bottom up to the red line (just below Chat/Voice labels).
+  const BRANDING_STRIP_HEIGHT = 28;
+  const COVER_DROP_CM = 10;
+  const COVER_ANIMATION_MS = 550;
 
   if (document.querySelector('script[data-jotform-agent="1"]')) {
     return;
   }
 
+  let refreshQueued = false;
+  let lastCoverKey = "";
+  let pollTimer = null;
+  let chatWasOpen = false;
+  let coverDropPx = null;
+
   const style = document.createElement("style");
   style.textContent =
     '[id^="JotformAgent-"],.jf-agent-root,.jf-agent-chat-button,.jf-agent-widget,' +
     'iframe[src*="jotform.com"],iframe[src*="agent.jotform.com"]{z-index:100000!important;}' +
+    'iframe[data-jf-branding-clip="1"]{' +
+    "clip-path:inset(0 0 " +
+    BRANDING_STRIP_HEIGHT +
+    "px 0)!important;" +
+    "}" +
     '[id^="JotformAgent-"] a[href*="jotform"],' +
     '.jf-agent-root a[href*="jotform"]{' +
     "pointer-events:none!important;cursor:default!important;" +
@@ -30,7 +42,34 @@
     "z-index:2147483647;pointer-events:auto;cursor:default;" +
     "border-top-left-radius:0;border-top-right-radius:0;" +
     "overflow:hidden;box-sizing:border-box;" +
-    "align-items:flex-end;justify-content:center;padding:0 10px 7px;" +
+    "align-items:flex-end;justify-content:center;padding:0 10px 5px;" +
+    "background:" +
+    AGENT_CHAT_BG +
+    ";" +
+    "}" +
+    "#" +
+    COVER_ID +
+    ".jf-cover-slide{" +
+    "transition:top " +
+    COVER_ANIMATION_MS +
+    "ms cubic-bezier(0.22,1,0.36,1)," +
+    "height " +
+    COVER_ANIMATION_MS +
+    "ms cubic-bezier(0.22,1,0.36,1);" +
+    "will-change:top,height;" +
+    "}" +
+    "#" +
+    COVER_ID +
+    ".jf-cover-start .jf-branding-contact{" +
+    "opacity:0;" +
+    "}" +
+    "#" +
+    COVER_ID +
+    ".jf-cover-slide:not(.jf-cover-start) .jf-branding-contact{" +
+    "opacity:1;" +
+    "transition:opacity 180ms ease " +
+    Math.round(COVER_ANIMATION_MS * 0.55) +
+    "ms;" +
     "}" +
     "#" +
     COVER_ID +
@@ -60,74 +99,27 @@
     });
   }
 
-  function isVisibleColor(value) {
-    return (
-      value &&
-      value !== "transparent" &&
-      value !== "rgba(0, 0, 0, 0)" &&
-      value !== "initial"
-    );
-  }
-
-  function parseRgb(value) {
-    var match = value.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-    if (!match) {
-      return null;
+  function getCoverDropPx() {
+    if (coverDropPx !== null) {
+      return coverDropPx;
     }
-    return {
-      r: Number(match[1]),
-      g: Number(match[2]),
-      b: Number(match[3]),
-    };
-  }
 
-  function isNearWhite(rgb) {
-    return rgb.r >= 250 && rgb.g >= 250 && rgb.b >= 250;
-  }
-
-  function pickFooterBackground(shell, widgetRect) {
-    var footerBandTop = widgetRect.bottom - 96;
-    var bestColor = null;
-    var bestArea = 0;
-
-    walkAll(shell, function (el) {
-      if (el.id === COVER_ID || el.tagName === "IFRAME") {
-        return;
-      }
-
-      var rect = el.getBoundingClientRect();
-      if (rect.width < 40 || rect.height < 8) {
-        return;
-      }
-      if (rect.bottom < widgetRect.bottom - 2 || rect.top < footerBandTop) {
-        return;
-      }
-
-      var bg = window.getComputedStyle(el).backgroundColor;
-      if (!isVisibleColor(bg)) {
-        return;
-      }
-
-      var rgb = parseRgb(bg);
-      if (rgb && isNearWhite(rgb)) {
-        return;
-      }
-
-      var area = rect.width * rect.height;
-      if (area >= bestArea) {
-        bestArea = area;
-        bestColor = bg;
-      }
-    });
-
-    return bestColor || AGENT_CHAT_BG;
+    var probe = document.createElement("div");
+    probe.style.height = COVER_DROP_CM + "cm";
+    probe.style.position = "absolute";
+    probe.style.visibility = "hidden";
+    probe.style.pointerEvents = "none";
+    document.body.appendChild(probe);
+    coverDropPx = probe.getBoundingClientRect().height;
+    document.body.removeChild(probe);
+    return coverDropPx;
   }
 
   function pickRadius(node) {
-    var style = window.getComputedStyle(node);
-    var bl = style.borderBottomLeftRadius;
-    var br = style.borderBottomRightRadius;
-    var all = style.borderRadius;
+    var computed = window.getComputedStyle(node);
+    var bl = computed.borderBottomLeftRadius;
+    var br = computed.borderBottomRightRadius;
+    var all = computed.borderRadius;
 
     if (!bl || bl === "0px") {
       bl = all || DEFAULT_RADIUS;
@@ -167,14 +159,6 @@
         },
         true,
       );
-      cover.addEventListener(
-        "mousedown",
-        function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-        },
-        true,
-      );
       document.body.appendChild(cover);
     }
     return cover;
@@ -186,7 +170,7 @@
 
     document.querySelectorAll('iframe[src*="jotform"]').forEach(function (iframe) {
       var rect = iframe.getBoundingClientRect();
-      if (rect.width < 160 || rect.height < 200) {
+      if (rect.width < 120 || rect.height < 80) {
         return;
       }
       var area = rect.width * rect.height;
@@ -214,39 +198,34 @@
     return shell;
   }
 
-  function getWidgetTheme(iframe) {
-    var shell = findWidgetShell(iframe);
-    if (!shell) {
-      return null;
+  function isBrandingElement(el) {
+    if (!el || el.id === COVER_ID || el.tagName === "IFRAME") {
+      return false;
+    }
+    if (el.dataset.jfBrandingHidden === "1") {
+      return false;
     }
 
-    var rect = shell.getBoundingClientRect();
-    var radius = pickRadius(shell);
-    return {
-      rect: rect,
-      background: pickFooterBackground(shell, rect),
-      radiusBL: radius.bl,
-      radiusBR: radius.br,
-    };
+    var text = (el.textContent || "").replace(/\s+/g, " ").trim();
+    var isBrandingText =
+      /powered by jotform/i.test(text) && text.length <= 90 && el.children.length <= 6;
+    var isBrandingLink =
+      el.tagName === "A" &&
+      /jotform/i.test(el.getAttribute("href") || "") &&
+      /ai|agent|powered|brand/i.test(
+        ((el.textContent || "") + " " + (el.getAttribute("href") || "")).toLowerCase(),
+      );
+
+    return isBrandingText || isBrandingLink;
   }
 
-  function disableBrandingLinks() {
-    walkAll(document.body, function (el) {
-      if (el.id === COVER_ID || el.tagName === "IFRAME") {
-        return;
-      }
+  function disableBrandingLinks(root) {
+    if (!root) {
+      return;
+    }
 
-      var text = (el.textContent || "").replace(/\s+/g, " ").trim();
-      var isBrandingText =
-        /powered by jotform/i.test(text) && text.length <= 90 && el.children.length <= 6;
-      var isBrandingLink =
-        el.tagName === "A" &&
-        /jotform/i.test(el.getAttribute("href") || "") &&
-        /ai|agent|powered|brand/i.test(
-          ((el.textContent || "") + " " + (el.getAttribute("href") || "")).toLowerCase(),
-        );
-
-      if (!isBrandingText && !isBrandingLink) {
+    walkAll(root, function (el) {
+      if (!isBrandingElement(el)) {
         return;
       }
 
@@ -255,6 +234,7 @@
         return;
       }
 
+      el.dataset.jfBrandingHidden = "1";
       el.style.setProperty("pointer-events", "none", "important");
       el.style.setProperty("cursor", "default", "important");
       el.style.setProperty("visibility", "hidden", "important");
@@ -266,73 +246,232 @@
 
       if (el.tagName === "A") {
         el.setAttribute("tabindex", "-1");
-        el.removeAttribute("href");
       }
     });
   }
 
-  function showCover(rect, theme) {
-    var cover = getCoverEl();
-    theme = theme || {};
+  function applyIframeBrandingClip(iframe, isOpen) {
+    if (!iframe) {
+      return;
+    }
 
-    cover.style.display = "flex";
+    if (isOpen) {
+      if (iframe.dataset.jfBrandingClip === "1") {
+        return;
+      }
+      iframe.dataset.jfBrandingClip = "1";
+      iframe.style.setProperty(
+        "clip-path",
+        "inset(0 0 " + BRANDING_STRIP_HEIGHT + "px 0)",
+        "important",
+      );
+      return;
+    }
+
+    if (iframe.dataset.jfBrandingClip !== "1") {
+      return;
+    }
+    delete iframe.dataset.jfBrandingClip;
+    iframe.style.removeProperty("clip-path");
+  }
+
+  function isWidgetExpanded(iframe, shellRect) {
+    if (!iframe || !shellRect) {
+      return false;
+    }
+
+    var iframeRect = iframe.getBoundingClientRect();
+    return iframeRect.width >= 140 && iframeRect.height >= 100 && shellRect.height >= 140;
+  }
+
+  function isChatFullyOpen(iframe, shellRect) {
+    if (!iframe || !shellRect) {
+      return false;
+    }
+
+    var iframeRect = iframe.getBoundingClientRect();
+    return iframeRect.width >= 160 && iframeRect.height >= 200 && shellRect.height >= 280;
+  }
+
+  function coverKey(rect, radiusBL, radiusBR, visible) {
+    return (
+      (visible ? "1" : "0") +
+      ":" +
+      Math.round(rect.left) +
+      ":" +
+      Math.round(rect.top) +
+      ":" +
+      Math.round(rect.width) +
+      ":" +
+      Math.round(rect.height) +
+      ":" +
+      radiusBL +
+      ":" +
+      radiusBR
+    );
+  }
+
+  function applyCoverGeometry(cover, rect, radiusBL, radiusBR) {
     cover.style.left = Math.round(rect.left) + "px";
     cover.style.top = Math.round(rect.top) + "px";
     cover.style.width = Math.round(rect.width) + "px";
     cover.style.height = Math.round(rect.height) + "px";
-    cover.style.background = theme.background || AGENT_CHAT_BG;
-    cover.style.borderBottomLeftRadius = theme.radiusBL || DEFAULT_RADIUS;
-    cover.style.borderBottomRightRadius = theme.radiusBR || DEFAULT_RADIUS;
+    cover.style.borderBottomLeftRadius = radiusBL || DEFAULT_RADIUS;
+    cover.style.borderBottomRightRadius = radiusBR || DEFAULT_RADIUS;
     cover.style.borderTopLeftRadius = "0";
     cover.style.borderTopRightRadius = "0";
-    cover.style.boxShadow =
-      "0 -1px 0 0 " + (theme.background || AGENT_CHAT_BG);
-    cover.style.pointerEvents = "auto";
-    cover.style.cursor = "default";
+    cover.style.boxShadow = "none";
+  }
+
+  function buildCoverRect(shellRect, phase) {
+    var finalTop = shellRect.bottom - BRANDING_STRIP_HEIGHT;
+
+    if (phase === "start") {
+      var drop = getCoverDropPx();
+      var startTop = finalTop - drop;
+      return {
+        left: shellRect.left,
+        top: startTop,
+        width: shellRect.width,
+        height: shellRect.bottom - startTop,
+      };
+    }
+
+    return {
+      left: shellRect.left,
+      top: finalTop,
+      width: shellRect.width,
+      height: BRANDING_STRIP_HEIGHT,
+    };
+  }
+
+  function playCoverSlideIn(cover, shellRect, radiusBL, radiusBR) {
+    cover.classList.remove("jf-cover-start");
+    cover.classList.add("jf-cover-slide");
+    applyCoverGeometry(cover, buildCoverRect(shellRect, "start"), radiusBL, radiusBR);
+    cover.classList.add("jf-cover-start");
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        applyCoverGeometry(cover, buildCoverRect(shellRect, "end"), radiusBL, radiusBR);
+        cover.classList.remove("jf-cover-start");
+      });
+    });
+  }
+
+  function showCover(shellRect, radiusBL, radiusBR, animate) {
+    var finalRect = buildCoverRect(shellRect, "end");
+    var key = coverKey(finalRect, radiusBL, radiusBR, true);
+    if (key === lastCoverKey && !animate) {
+      return;
+    }
+    lastCoverKey = key;
+
+    var cover = getCoverEl();
+    cover.style.display = "flex";
+
+    if (animate) {
+      playCoverSlideIn(cover, shellRect, radiusBL, radiusBR);
+      return;
+    }
+
+    cover.classList.remove("jf-cover-slide", "jf-cover-start");
+    applyCoverGeometry(cover, finalRect, radiusBL, radiusBR);
   }
 
   function hideCover() {
+    if (lastCoverKey === "hidden") {
+      return;
+    }
+    lastCoverKey = "hidden";
+
     var cover = document.getElementById(COVER_ID);
     if (cover) {
+      cover.classList.remove("jf-cover-slide", "jf-cover-start");
       cover.style.display = "none";
     }
   }
 
-  function buildCoverRect(theme) {
-    var height = MIN_COVER_HEIGHT + COVER_OVERLAP_UP;
-    return {
-      left: theme.rect.left,
-      top: theme.rect.bottom - height,
-      width: theme.rect.width,
-      height: height,
-    };
-  }
-
   function applyBrandingCover() {
     var iframe = findChatIframe();
-    var theme = iframe ? getWidgetTheme(iframe) : null;
-    disableBrandingLinks();
+    var shell = iframe ? findWidgetShell(iframe) : null;
 
-    if (!iframe || !theme) {
+    if (!iframe || !shell) {
+      hideCover();
+      applyIframeBrandingClip(iframe, false);
+      return;
+    }
+
+    disableBrandingLinks(shell);
+
+    var shellRect = shell.getBoundingClientRect();
+    var expanded = isWidgetExpanded(iframe, shellRect);
+    var fullyOpen = isChatFullyOpen(iframe, shellRect);
+    applyIframeBrandingClip(iframe, expanded);
+
+    if (!expanded) {
+      chatWasOpen = false;
       hideCover();
       return;
     }
 
-    showCover(buildCoverRect(theme), theme);
+    var radius = pickRadius(shell);
+    var shouldAnimate = fullyOpen && !chatWasOpen;
+    if (fullyOpen) {
+      chatWasOpen = true;
+    }
+
+    showCover(shellRect, radius.bl, radius.br, shouldAnimate);
   }
 
-  function refreshBrandingHide() {
-    applyBrandingCover();
+  function scheduleRefresh() {
+    if (refreshQueued) {
+      return;
+    }
+    refreshQueued = true;
+    requestAnimationFrame(function () {
+      refreshQueued = false;
+      applyBrandingCover();
+    });
   }
 
-  refreshBrandingHide();
-  new MutationObserver(refreshBrandingHide).observe(document.documentElement, {
+  function startShortPolling() {
+    if (pollTimer) {
+      return;
+    }
+
+    var attempts = 0;
+    pollTimer = window.setInterval(function () {
+      scheduleRefresh();
+      attempts += 1;
+      if (attempts >= 12) {
+        window.clearInterval(pollTimer);
+        pollTimer = null;
+      }
+    }, 1000);
+  }
+
+  scheduleRefresh();
+
+  new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i += 1) {
+      var target = mutations[i].target;
+      if (target && target.id === COVER_ID) {
+        continue;
+      }
+      if (target && target.closest && target.closest("#" + COVER_ID)) {
+        continue;
+      }
+      scheduleRefresh();
+      return;
+    }
+  }).observe(document.documentElement, {
     childList: true,
     subtree: true,
-    attributes: true,
   });
-  window.addEventListener("resize", refreshBrandingHide);
-  window.addEventListener("scroll", refreshBrandingHide, true);
+
+  window.addEventListener("resize", scheduleRefresh, { passive: true });
+  window.addEventListener("scroll", scheduleRefresh, { passive: true, capture: true });
 
   const script = document.createElement("script");
   script.src =
@@ -342,10 +481,10 @@
   script.defer = true;
   script.dataset.jotformAgent = "1";
   script.addEventListener("load", function () {
-    [300, 800, 1500, 2500, 4000].forEach(function (delay) {
-      window.setTimeout(refreshBrandingHide, delay);
+    [300, 800, 1500, 2500].forEach(function (delay) {
+      window.setTimeout(scheduleRefresh, delay);
     });
-    window.setInterval(refreshBrandingHide, 750);
+    startShortPolling();
   });
   document.body.appendChild(script);
 })();
