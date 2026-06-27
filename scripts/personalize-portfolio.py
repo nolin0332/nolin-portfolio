@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Personalize portfolio from scripts/resume-profile.json (Michael Trent)."""
+"""Personalize portfolio from scripts/resume-profile.json."""
 
 from __future__ import annotations
 
@@ -641,6 +641,7 @@ def set_skills_cats(html: str, categories: list[dict[str, str]]) -> str:
 
 CONTACT_FORM_MARKER = 'id="contact-form"'
 CONTACT_SCRIPT_MARKER = "contact-form.js"
+JOTFORM_SCRIPT_MARKER = "jotform-agent.js"
 CONTACT_LAYOUT_MARKER = 'class="contact-layout"'
 
 EMAIL_ICON_SVG = (
@@ -775,6 +776,16 @@ def inject_contact_script(html: str) -> str:
     return html
 
 
+def inject_jotform_agent_script(html: str) -> str:
+    tag = '<script src="jotform-agent.js" defer></script>'
+    if JOTFORM_SCRIPT_MARKER in html:
+        return html
+    if "</body>" in html:
+        html = html.replace("</body>", f"{tag}</body>", 1)
+        print("  jotform-agent.js script")
+    return html
+
+
 def build_contact_info_html(profile: dict) -> str:
     p = profile["profile"]
     email = html_escape(p["email"])
@@ -863,6 +874,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
 
     legacy_emails = (
         "michael.trent039@gmail.com",
+        "michael.trent.dev@gmail.com",
         "pzscvserpw080@hotmail.com",
     )
     for old_email in legacy_emails:
@@ -870,7 +882,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
 
     legacy_phones = (
         "+1 (720) 358-1119",
-        "+1 (720) 358-1119",
+        "+1 (972) 301 7727",
     )
     for old_phone in legacy_phones:
         html = html.replace(old_phone, phone)
@@ -888,6 +900,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
     html = inject_contact_form(html, email, web3_key, formsubmit_id)
     html = restructure_end_hero_layout(html, profile)
     html = inject_contact_script(html)
+    html = inject_jotform_agent_script(html)
     return html
 
 
@@ -1153,9 +1166,28 @@ def apply_index(profile: dict) -> None:
 
     html = apply_contact_details(html, profile)
 
+    html = re.sub(
+        r'(<span class="jl-name">)[^<]*(</span>)',
+        rf'\1{p["name"]}\2',
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'(<span class="jl-role">)[^<]*(</span>)',
+        rf'\1{p["title"]}\2',
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'© 2026 [^<]+',
+        f'© 2026 {p["name"]} · {p["title"]}',
+        html,
+    )
+
     for legacy_name in (
         "Julio Membreno",
         "Michael Membreno",
+        "Michael Trent",
         "Timothy Calder",
         "Ochsner Health",
         "Venture For America",
@@ -1164,18 +1196,20 @@ def apply_index(profile: dict) -> None:
         "NewGen Strategies",
     ):
         html = html.replace(legacy_name, p["name"] if legacy_name in (
-            "Julio Membreno", "Michael Membreno", "Timothy Calder"
+            "Julio Membreno", "Michael Membreno", "Michael Trent", "Timothy Calder"
         ) else {
-            "Ochsner Health": "Booz Allen",
-            "Venture For America": "PA Consulting",
-            "Camberline Technologies": "Lone Tree Energy",
-            "Boston University": "CU Denver",
-            "NewGen Strategies": "Booz Allen",
+            "Ochsner Health": "RedDress Medical",
+            "Venture For America": "Silvifor",
+            "Camberline Technologies": "Google",
+            "Boston University": "Texas Tech University",
+            "NewGen Strategies": "RedDress Medical",
         }[legacy_name])
 
     html = html.replace("Senior Software Engineer", p["title"])
-    html = html.replace("Distributed Systems & Backend Platforms", "RAG, Agentic AI & MLOps")
+    html = html.replace("Distributed Systems & Backend Platforms", "GenAI, RAG & Production ML")
     html = html.replace("Miami, FL", p["location"])
+    html = html.replace("Denver, CO", p["location"])
+    html = html.replace("Parker, CO", p["location"])
     html = html.replace("pzscvserpw080@hotmail.com", p["email"])
     html = html.replace(
         'href="https://discord.com/users/1504060746160537782"',

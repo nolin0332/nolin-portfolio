@@ -1,13 +1,13 @@
 {
-  "name": "timothy-calder-portfolio",
+  "name": "molly-youngblood-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Immersive WebGL portfolio — Michael Trent, Principal AI/ML Engineer",
+  "description": "Immersive WebGL portfolio — Molly Youngblood, Senior AI/ML Engineer",
   "scripts": {
-    "dev": "node scripts/ensure-assets.mjs && vite --host 127.0.0.1 --port 5136 --strictPort --open http://127.0.0.1:5136/",
+    "dev": "node scripts/ensure-assets.mjs && vite --host 127.0.0.1 --port 5138 --strictPort --open http://127.0.0.1:5138/",
     "remake": "node scripts/remake-from-reference.mjs",
     "start": "npm run dev",
-    "preview": "vite preview --host 127.0.0.1 --port 5136 --strictPort",
+    "preview": "vite preview --host 127.0.0.1 --port 5138 --strictPort",
     "build": "node scripts/verify-complete.mjs",
     "sync-assets": "node scripts/download-canonical.mjs && node scripts/download-sounds.mjs && node scripts/download-remaining.mjs",
     "generate-michael-logo": "node scripts/generate-michael-logo.mjs",

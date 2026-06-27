@@ -159,16 +159,16 @@ export default defineConfig({
   publicDir: false,
   server: {
     host: '127.0.0.1',
-    port: 5136,
+    port: 5138,
     strictPort: true,
-    open: 'http://127.0.0.1:5136/',
+    open: 'http://127.0.0.1:5138/',
     headers: {
       'Cache-Control': 'no-store',
     },
   },
   preview: {
     host: '127.0.0.1',
-    port: 5136,
+    port: 5138,
     strictPort: true,
   },
   assetsInclude: ['**/*.buf'],

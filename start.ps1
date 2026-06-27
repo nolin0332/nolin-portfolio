@@ -2,7 +2,7 @@ Set-Location $PSScriptRoot
 $ErrorActionPreference = "Stop"
 
 Write-Host ""
-Write-Host "  Portfolio - http://127.0.0.1:5136" -ForegroundColor Cyan
+Write-Host "  Portfolio - http://127.0.0.1:5138" -ForegroundColor Cyan
 Write-Host ""
 
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) {

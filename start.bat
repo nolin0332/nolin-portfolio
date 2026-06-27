@@ -1,6 +1,6 @@
 @echo off
 cd /d "%~dp0"
-title Portfolio - http://127.0.0.1:5136
+title Portfolio - http://127.0.0.1:5138
 
 echo.
 echo  Timothy Calder Portfolio
@@ -25,7 +25,7 @@ if not exist "node_modules\vite" (
   )
 )
 
-echo Starting server at http://127.0.0.1:5136/
+echo Starting server at http://127.0.0.1:5138/
 echo Press Ctrl+C to stop.
 echo.
 
@@ -33,8 +33,8 @@ call npm run dev
 
 if errorlevel 1 (
   echo.
-  echo If port 5136 is busy, close other terminals or run:
-  echo   netstat -ano ^| findstr :5136
+  echo If port 5138 is busy, close other terminals or run:
+  echo   netstat -ano ^| findstr :5138
   echo   taskkill /PID ^<pid^> /F
   pause
 )

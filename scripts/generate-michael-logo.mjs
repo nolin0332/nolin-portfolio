@@ -17,7 +17,7 @@ const LOGO_DIR = path.join(ROOT, 'public/assets/models/logo');
 const BACKUP_DIR = path.join(LOGO_DIR, 'julio-backup');
 
 // Match reference: capital M + lowercase, Aptos SemiBold (lighter than Bold).
-const NAME = 'Michael';
+const NAME = 'Molly';
 const LETTER_SPACING = 0.1;
 const FONT_SIZE = 1.25;
 const TARGET = {
@@ -215,7 +215,7 @@ function main() {
   shellGeometry.computeBoundingBox();
   innerGeometry.computeBoundingBox();
 
-  console.log('Generated Michael logo buffers:');
+  console.log('Generated Molly logo buffers:');
   console.log('  name:', NAME);
   console.log(
     '  logo_shell.buf',

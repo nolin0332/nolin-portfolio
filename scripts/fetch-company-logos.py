@@ -15,29 +15,29 @@ USER_AGENT = (
 )
 
 LOGOS = {
-    "booz-allen.png": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Booz_Allen_Hamilton_logo.png",
-        "max_height": 56,
-        "white_pad": False,
-    },
-    "pa-consulting.png": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Pa-logo.svg/330px-Pa-logo.svg.png",
-        "max_height": 64,
-        "white_pad": True,
-    },
-    "lone-tree-energy.png": {
-        "url": "https://lonetreeenergy.com/wp-content/uploads/2025/08/logo_from_current_website.png",
-        "max_height": 72,
-        "white_pad": True,
-    },
-    "cu-boulder.png": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Colorado_Boulder_logo.png",
+    "reddress-medical.png": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Cross.svg",
         "max_height": 56,
         "white_pad": True,
-        "max_width": 280,
     },
-    "cu-denver.png": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/CU_Denver_logo.png",
+    "silvifor.png": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leaf_1_web.svg",
+        "max_height": 56,
+        "white_pad": True,
+    },
+    "google.png": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_2015_logo.svg",
+        "max_height": 48,
+        "white_pad": True,
+        "max_width": 200,
+    },
+    "designright4u.png": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/React-icon.svg",
+        "max_height": 56,
+        "white_pad": True,
+    },
+    "texas-tech.png": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas_Tech_University_system_logo.svg",
         "max_height": 56,
         "white_pad": True,
         "max_width": 260,
