@@ -883,6 +883,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
     legacy_phones = (
         "+1 (720) 358-1119",
         "+1 (972) 301 7727",
+        "+1 (904) 552-5558",
     )
     for old_phone in legacy_phones:
         html = html.replace(old_phone, phone)
