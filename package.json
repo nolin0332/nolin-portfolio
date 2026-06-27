@@ -14,7 +14,8 @@
     "convert-logo-font": "node scripts/convert-font-to-typeface.mjs",
     "download-aptos-font": "node scripts/download-aptos-font.mjs",
     "personalize": "python scripts/fetch-company-logos.py && python scripts/personalize-portfolio.py && python scripts/apply-skill-textures.py",
-    "apply-skill-textures": "python scripts/apply-skill-textures.py"
+    "apply-skill-textures": "python scripts/apply-skill-textures.py",
+    "deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
   },
   "devDependencies": {
     "playwright": "^1.60.0",
