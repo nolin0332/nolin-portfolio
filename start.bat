@@ -3,8 +3,8 @@ cd /d "%~dp0"
 title Portfolio - http://127.0.0.1:5138
 
 echo.
-echo  Timothy Calder Portfolio
-echo  ========================
+echo  Sol0420 Portfolio
+echo  =================
 echo.
 
 where node >nul 2>&1

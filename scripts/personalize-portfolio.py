@@ -1191,7 +1191,6 @@ def apply_index(profile: dict) -> None:
         "Julio Membreno",
         "Michael Membreno",
         "Michael Trent",
-        "Timothy Calder",
         "Ochsner Health",
         "Venture For America",
         "Camberline Technologies",
@@ -1199,7 +1198,7 @@ def apply_index(profile: dict) -> None:
         "NewGen Strategies",
     ):
         html = html.replace(legacy_name, p["name"] if legacy_name in (
-            "Julio Membreno", "Michael Membreno", "Michael Trent", "Timothy Calder"
+            "Julio Membreno", "Michael Membreno", "Michael Trent"
         ) else {
             "Ochsner Health": "RedDress Medical",
             "Venture For America": "Silvifor",
