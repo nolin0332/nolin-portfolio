@@ -876,7 +876,6 @@ def apply_contact_details(html: str, profile: dict) -> str:
         "michael.trent039@gmail.com",
         "michael.trent.dev@gmail.com",
         "pzscvserpw080@hotmail.com",
-        "molly.youngblood.eng@gmail.com",
     )
     for old_email in legacy_emails:
         html = html.replace(old_email, email)
@@ -885,7 +884,6 @@ def apply_contact_details(html: str, profile: dict) -> str:
         "+1 (720) 358-1119",
         "+1 (972) 301 7727",
         "+1 (904) 552-5558",
-        "+1 (904) 314-4057",
     )
     for old_phone in legacy_phones:
         html = html.replace(old_phone, phone)
@@ -1769,7 +1767,7 @@ def apply_meta(profile: dict) -> None:
             "Edit `scripts/resume-profile.json`, then:\n\n"
             "```bash\nnpm run sync-assets\nnpm run personalize\n```\n\n"
             "Regenerate branding assets after a name change:\n\n"
-            "```bash\nnpm run generate-michael-logo\n"
+            "```bash\nnpm run generate-logo\n"
             "python scripts/generate-favicon.py\n"
             "python scripts/generate-cover.py\n"
             "npm run generate-trailer   # hero trailer videos\n```\n",

@@ -10,7 +10,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 5138 --strictPort",
     "build": "node scripts/verify-complete.mjs",
     "sync-assets": "node scripts/download-canonical.mjs && node scripts/download-sounds.mjs && node scripts/download-remaining.mjs",
-    "generate-michael-logo": "node scripts/generate-michael-logo.mjs",
+    "generate-logo": "node scripts/generate-logo.mjs",
     "generate-trailer": "python scripts/generate-trailer.py",
     "convert-logo-font": "node scripts/convert-font-to-typeface.mjs",
     "download-aptos-font": "node scripts/download-aptos-font.mjs",

@@ -7,7 +7,7 @@ if (-not (Test-Path $git)) {
 }
 
 Write-Host ""
-Write-Host "  Deploy local changes -> michael.trent.dev (live site)" -ForegroundColor Cyan
+Write-Host "  Deploy local changes -> github.com/nolin0332/nolin-portfolio" -ForegroundColor Cyan
 Write-Host ""
 
 $status = & $git status --porcelain
@@ -25,9 +25,8 @@ if ($status) {
   Write-Host "No local changes to commit." -ForegroundColor Gray
 }
 
-Write-Host "Pushing to live site repo..." -ForegroundColor Green
-& $git push live master:main
+Write-Host "Pushing to origin/master..." -ForegroundColor Green
+& $git push origin master
 Write-Host ""
-Write-Host "Done. Vercel will redeploy in ~1-2 minutes." -ForegroundColor Green
-Write-Host "Live site: https://michaeltrentdev.vercel.app" -ForegroundColor Cyan
+Write-Host "Done. If the repo is connected to Vercel it redeploys in ~1-2 minutes." -ForegroundColor Green
 Write-Host ""

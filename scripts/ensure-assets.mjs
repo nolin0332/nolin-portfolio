@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const marker = join(root, 'public/assets/textures/LDR_RGB1_0.png');
-const logoMarker = join(root, 'public/assets/logos/companies/cu-boulder.png');
+const logoMarker = join(root, 'public/assets/logos/companies/novawave.png');
 
 function ok(path) {
   return existsSync(path) && statSync(path).size > 1000;

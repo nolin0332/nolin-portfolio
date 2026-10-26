@@ -16,5 +16,5 @@ m2 = re.search(r'class="skills-cats">(.{0,700})', h, re.DOTALL)
 body = m2.group(1) if m2 else ""
 print("skill-cat count:", body.count("skill-cat"))
 print("duplicate Languages:", body.count("Languages"))
-print("email:", "michael.trent039@gmail.com" in h)
+print("email:", "whitbecknolin@gmail.com" in h)
 print("hotmail:", "hotmail.com" in h)

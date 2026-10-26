@@ -27,7 +27,7 @@ npm run personalize
 Regenerate branding assets after a name change:
 
 ```bash
-npm run generate-michael-logo
+npm run generate-logo
 python scripts/generate-favicon.py
 python scripts/generate-cover.py
 npm run generate-trailer   # hero trailer videos
