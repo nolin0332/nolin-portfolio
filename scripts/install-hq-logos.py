@@ -6,9 +6,8 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = Path(
-    r"C:\Users\Admin\.cursor\projects\d-Program-All-Portfolio-TimothyCalderPortfolio\assets"
-)
+# Local folder holding the original high-resolution logo downloads.
+ASSETS = ROOT / "assets-src"
 OUT = ROOT / "public" / "assets" / "logos"
 
 # Order: Python, PyTorch, AWS, LLM, Azure AI, MLOps
@@ -23,9 +22,6 @@ HQ_SOURCES = {
 
 
 def find_source(filename: str) -> Path:
-    direct = ASSETS / f"c__Users_Admin_AppData_Roaming_Cursor_User_workspaceStorage_6ec12f7f8325b64f5c653dc9183eaddf_images_{filename}"
-    if direct.exists():
-        return direct
     matches = list(ASSETS.glob(f"*{filename}"))
     if matches:
         return matches[0]

@@ -12,9 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 MANIFEST_PATH = ROOT / "scripts" / "logo-manifest.json"
-CURSOR_ASSETS = Path(
-    r"C:\Users\Admin\.cursor\projects\d-Program-All-Portfolio-TimothyCalderPortfolio\assets"
-)
+# Optional local folder holding the original high-resolution logo downloads.
+EXTRA_ASSETS = ROOT / "assets-src"
 LOGOS_OUT = PUBLIC / "assets" / "logos"
 
 LEADERBOARD_SIZE = 160
@@ -39,7 +38,7 @@ def hex_to_rgb(value: str) -> tuple[int, int, int]:
 
 def resolve_source(name: str, logos: dict[str, str]) -> Path:
     suffix = logos[name]
-    for base in (LOGOS_OUT, CURSOR_ASSETS):
+    for base in (LOGOS_OUT, EXTRA_ASSETS):
         if not base.exists():
             continue
         if base == LOGOS_OUT:
