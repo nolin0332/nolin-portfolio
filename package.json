@@ -1,8 +1,8 @@
 {
-  "name": "molly-youngblood-portfolio",
+  "name": "nolin-whitbeck-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Immersive WebGL portfolio — Molly Youngblood, Senior AI/ML Engineer",
+  "description": "Immersive WebGL portfolio — Nolin Whitbeck, Senior Applied AI/ML Engineer",
   "scripts": {
     "dev": "node scripts/ensure-assets.mjs && vite --host 127.0.0.1 --port 5138 --strictPort --open http://127.0.0.1:5138/",
     "remake": "node scripts/remake-from-reference.mjs",
@@ -11,6 +11,7 @@
     "build": "node scripts/verify-complete.mjs",
     "sync-assets": "node scripts/download-canonical.mjs && node scripts/download-sounds.mjs && node scripts/download-remaining.mjs",
     "generate-michael-logo": "node scripts/generate-michael-logo.mjs",
+    "generate-trailer": "python scripts/generate-trailer.py",
     "convert-logo-font": "node scripts/convert-font-to-typeface.mjs",
     "download-aptos-font": "node scripts/download-aptos-font.mjs",
     "personalize": "python scripts/fetch-company-logos.py && python scripts/personalize-portfolio.py && python scripts/apply-skill-textures.py",

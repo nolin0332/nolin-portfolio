@@ -11,22 +11,25 @@
     "azure-ai": "image-c210966b-4c69-4358-82df-cfc422447c4c.png",
     "rag": "image-1680c385-3fd5-4cef-9a24-e5cd466d7e07.png",
     "pytorch": "images-db739486-892d-4643-a775-eb6c0714820e.png",
-    "aws-mlops": "image-4f0ad015-8741-481c-baa3-d3cb4419e834.png"
+    "aws-mlops": "image-4f0ad015-8741-481c-baa3-d3cb4419e834.png",
+    "fastapi": "fastapi.png",
+    "kubernetes": "kubernetes.png",
+    "react": "react.png"
   },
   "textures": {
     "leaderboard": {
       "1.png": "python",
-      "2.png": "pytorch",
-      "3.png": "aws",
-      "4.png": "rag",
-      "5.png": "azure-ai"
+      "2.png": "rag",
+      "3.png": "fastapi",
+      "4.png": "pytorch",
+      "5.png": "kubernetes"
     },
     "quests": {
       "quest_2_card.png": "python",
       "quest_1_card_1.png": "pytorch",
-      "quest_1_card_2.png": "aws",
+      "quest_1_card_2.png": "fastapi",
       "quest_3_card.png": "rag",
-      "quest_1_card_3.png": "azure-ai"
+      "quest_1_card_3.png": "kubernetes"
     },
     "jobs": {
       "card1.png": "healthcare-rag",
@@ -36,7 +39,7 @@
     "tools": {
       "card-like.jpg": "python",
       "card-comment.jpg": "aws",
-      "card-repost.jpg": "azure",
+      "card-repost.jpg": "react",
       "card-follow.jpg": "langchain"
     }
   }

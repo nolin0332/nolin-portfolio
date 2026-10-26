@@ -1,6 +1,6 @@
-# Molly Youngblood — Portfolio
+# Nolin Whitbeck — Portfolio
 
-Immersive WebGL portfolio for **Molly Youngblood**, Senior AI/ML Engineer. Includes an embedded JotForm conversational agent.
+Immersive WebGL portfolio for **Nolin Whitbeck**, Senior Applied AI/ML Engineer. Includes an embedded JotForm conversational agent.
 
 ## Run (Windows)
 
@@ -22,4 +22,13 @@ Edit `scripts/resume-profile.json`, then:
 ```bash
 npm run sync-assets
 npm run personalize
+```
+
+Regenerate branding assets after a name change:
+
+```bash
+npm run generate-michael-logo
+python scripts/generate-favicon.py
+python scripts/generate-cover.py
+npm run generate-trailer   # hero trailer videos
 ```

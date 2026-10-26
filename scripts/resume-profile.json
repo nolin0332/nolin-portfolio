@@ -1,208 +1,332 @@
 {
   "profile": {
-    "name": "Molly Youngblood",
-    "title": "Senior AI/ML Engineer",
-    "tagline": "Senior AI/ML and Generative AI engineering leader with 15+ years delivering intelligent applications, RAG systems, search relevance, and production ML across healthcare, financial services, forestry, and enterprise platforms.",
-    "email": "molly.youngblood.eng@gmail.com",
-    "phone": "+1 (904) 314-4057",
-    "linkedin": "https://www.linkedin.com/in/mollyyoungblood/",
-    "location": "Jacksonville, FL"
+    "name": "Nolin Whitbeck",
+    "title": "Senior Applied AI/ML Engineer",
+    "tagline": "Senior Full-Stack & Applied AI/ML Engineer with 15+ years in software engineering and 6+ years building production ML and applied AI systems: LLMs, RAG, retrieval and ranking, agent workflows, Python/FastAPI, model serving, Kubernetes, and MLOps.",
+    "email": "whitbecknolin@gmail.com",
+    "phone": "+1 (904) 290-1103",
+    "linkedin": "https://www.linkedin.com/in/nolin-t-whitbeck/",
+    "location": "Port Richey, FL"
   },
   "contactForm": {
     "web3formsAccessKey": "",
-    "formsubmitFormId": "41433ff4e9e5699c0ad60a33d57be77a"
+    "formsubmitFormId": ""
   },
   "jotformAgent": {
-    "id": "019f01f41cb1710687a41b71d271cc48dd5d",
-    "url": "https://www.jotform.com/agent/019f01f41cb1710687a41b71d271cc48dd5d"
+    "id": "01a175e78a9870008870aa27d5d4076d199d",
+    "url": "https://www.jotform.com/agent/01a175e78a9870008870aa27d5d4076d199d"
   },
-  "intro_hero": "Lead AI/ML Engineer &amp; Founder of DesignRight4U",
+  "intro_hero": "Senior Full-Stack &amp; Applied AI/ML Engineer",
   "leaderboard": {
-    "names": ["Python", "GCP", "PyTorch", "RAG", "LangChain"],
-    "scores": [98, 96, 94, 92, 90],
-    "icons": ["python", "googlecloud", "pytorch", "langchain", "tensorflow"]
+    "names": [
+      "Python",
+      "LLMs & RAG",
+      "FastAPI",
+      "PyTorch",
+      "Kubernetes"
+    ],
+    "scores": [
+      98,
+      96,
+      95,
+      94,
+      92
+    ],
+    "icons": [
+      "python",
+      "rag",
+      "fastapi",
+      "pytorch",
+      "kubernetes"
+    ]
   },
   "quests": {
-    "titleHtml": "GenAI &amp; RAG<br class=\"keep-mobile\">Pipelines",
+    "titleHtml": "LLM &amp; RAG<br class=\"keep-mobile\">Systems",
     "number": "Python",
-    "desc": "GenAI &amp; RAG pipelines",
+    "desc": "LLM &amp; RAG systems",
     "points": "15+ yrs"
   },
   "xp": {
     "titleHtml": "Core Skills",
     "items": [
-      "Python · SQL · TypeScript · Bash",
-      "RAG · LangChain · LangGraph · Gemini · OpenAI",
-      "PyTorch · scikit-learn · XGBoost · LightGBM",
-      "GCP · AWS · Cloud Run · EKS · Docker · Kubernetes",
-      "FastAPI · Flask · React · Next.js · REST APIs",
-      "PySpark · Airflow · PostgreSQL · BigQuery · Vector DBs",
-      "MLOps · LLM Evaluation · Agentic AI · Regulated AI"
+      "Python · FastAPI · Java · TypeScript · Go · Node.js",
+      "LLMs · RAG · Embeddings · Reranking · pgvector",
+      "LangChain · LangGraph · Tool Calling · Agent Workflows",
+      "PyTorch · vLLM · Model Serving · Inference Optimization",
+      "React · Next.js · GraphQL · REST · WebSockets",
+      "AWS · GCP · Azure · Kubernetes · Terraform · Argo CD",
+      "MLflow · Kubeflow · LangSmith · Langfuse · Prometheus · Grafana"
     ]
   },
   "quests_cards": {
     "cards": [
-      { "texture": "quest_2_card.png", "skill": "Python", "icon": "python", "color": "#3776AB" },
-      { "texture": "quest_3_card.png", "skill": "RAG", "icon": "langchain", "color": "#1C1C1C", "logo": "rag" },
-      { "texture": "quest_1_card_1.png", "skill": "PyTorch", "icon": "pytorch", "color": "#EE4C2C" },
-      { "texture": "quest_1_card_2.png", "skill": "GCP", "icon": "googlecloud", "color": "#4285F4" },
-      { "texture": "quest_1_card_3.png", "skill": "LangChain", "icon": "langchain", "color": "#1C3C3C" }
+      {
+        "texture": "quest_2_card.png",
+        "skill": "Python",
+        "icon": "python",
+        "color": "#3776AB"
+      },
+      {
+        "texture": "quest_3_card.png",
+        "skill": "LLMs & RAG",
+        "icon": "rag",
+        "color": "#1C1C1C",
+        "logo": "rag"
+      },
+      {
+        "texture": "quest_1_card_1.png",
+        "skill": "PyTorch",
+        "icon": "pytorch",
+        "color": "#EE4C2C"
+      },
+      {
+        "texture": "quest_1_card_2.png",
+        "skill": "FastAPI",
+        "icon": "fastapi",
+        "color": "#009688"
+      },
+      {
+        "texture": "quest_1_card_3.png",
+        "skill": "Kubernetes",
+        "icon": "kubernetes",
+        "color": "#326CE5"
+      }
     ]
   },
   "jobs": {
     "cards": [
-      { "texture": "card1.png", "icon": "python", "color": "#3776AB", "label": "Healthcare GenAI" },
-      { "texture": "card2.png", "icon": "tensorflow", "color": "#FF6F00", "label": "Forestry Intelligence" },
-      { "texture": "card3.png", "icon": "pytorch", "color": "#EE4C2C", "label": "Search & Ranking" }
+      {
+        "texture": "card1.png",
+        "icon": "healthcare-rag",
+        "logo": "healthcare-rag",
+        "color": "#00796B",
+        "label": "Medical Record Retrieval"
+      },
+      {
+        "texture": "card2.png",
+        "icon": "energy-ml",
+        "logo": "energy-ml",
+        "color": "#FF6F00",
+        "label": "Energy ML Platform"
+      },
+      {
+        "texture": "card3.png",
+        "icon": "grid-forecasting",
+        "logo": "grid-forecasting",
+        "color": "#455A64",
+        "label": "Enterprise LLM Apps"
+      }
     ]
   },
   "tools": {
     "cards": [
-      { "texture": "card-like.jpg", "icon": "python", "color": "#3776AB", "label": "Python" },
-      { "texture": "card-comment.jpg", "icon": "googlecloud", "color": "#4285F4", "label": "GCP" },
-      { "texture": "card-repost.jpg", "icon": "pytorch", "color": "#EE4C2C", "label": "PyTorch" },
-      { "texture": "card-follow.jpg", "icon": "langchain", "color": "#1C3C3C", "label": "LangChain" }
+      {
+        "texture": "card-like.jpg",
+        "icon": "python",
+        "color": "#3776AB",
+        "label": "Python"
+      },
+      {
+        "texture": "card-comment.jpg",
+        "icon": "aws",
+        "color": "#232F3E",
+        "label": "AWS"
+      },
+      {
+        "texture": "card-repost.jpg",
+        "icon": "react",
+        "color": "#20232A",
+        "label": "React"
+      },
+      {
+        "texture": "card-follow.jpg",
+        "icon": "langchain",
+        "color": "#1C3C3C",
+        "label": "LangChain"
+      }
     ]
   },
   "skills_cats": [
-    { "label": "Languages", "items": "Python · SQL · TypeScript · Bash · Java · C/C++" },
-    { "label": "AI &amp; Data", "items": "Gemini · OpenAI · Hugging Face · LangChain · LangGraph · RAG · PyTorch · scikit-learn · XGBoost · LightGBM · SHAP" },
-    { "label": "Databases", "items": "PostgreSQL · PostGIS · BigQuery · pyvector · Redis · MongoDB · Qdrant · FAISS" },
-    { "label": "Frameworks", "items": "FastAPI · Flask · React · Next.js · Streamlit · Node.js · REST APIs" },
-    { "label": "Cloud &amp; DevOps", "items": "GCP · AWS · Cloud Run · EKS · Docker · Kubernetes · Terraform · GitHub Actions · GitLab CI/CD · Airflow" },
-    { "label": "Testing &amp; Security", "items": "Prompt regression · Groundedness · Drift detection · A/B testing · IAM · SSO · RBAC · audit logging · CI/CD" }
+    {
+      "label": "Languages",
+      "items": "Python · Java · TypeScript · JavaScript · Go · SQL · Bash"
+    },
+    {
+      "label": "AI / ML &amp; GenAI",
+      "items": "LLMs · RAG · Embeddings · Semantic Search · Reranking · PyTorch · vLLM · LangChain · LangGraph · Tool Calling · Agent Workflows · Model Evaluation"
+    },
+    {
+      "label": "Backend &amp; Frontend",
+      "items": "FastAPI · Node.js · Express · GraphQL · REST · Kafka · WebSockets · React · Next.js · Vue · Angular"
+    },
+    {
+      "label": "Data",
+      "items": "PostgreSQL · pgvector · Redis · Spark · PySpark · Airflow · BigQuery · ETL/ELT · Feature Pipelines"
+    },
+    {
+      "label": "Cloud &amp; MLOps",
+      "items": "AWS · GCP · Azure · SageMaker · Bedrock · Vertex AI · MLflow · Kubeflow · Docker · Kubernetes · Terraform · Argo CD"
+    },
+    {
+      "label": "Evaluation &amp; Observability",
+      "items": "LangSmith · Langfuse · DeepEval · A/B Testing · Prometheus · Grafana · OpenTelemetry · Tracing · SLO Monitoring"
+    }
   ],
   "pre_end_cards": [
     {
-      "titleHtml": "Design<br>Clinical GenAI",
-      "descHtml": "Architect HIPAA-aware RAG, multi-modal LLM fusion, and fine-tuned clinical documentation pipelines with guardrails for regulated healthcare environments."
+      "titleHtml": "Design<br>AI Systems",
+      "descHtml": "Architect retrieval, inference, and agent workflows: embedding-based retrieval, ranking and reranking, grounded generation, and structured outputs with explicit handling of insufficient evidence."
     },
     {
-      "titleHtml": "Build<br>ML Platforms",
-      "descHtml": "Build ingestion, embedding, evaluation, and monitoring pipelines with Airflow, FastAPI, and cloud-native MLOps for versioned model deployment."
+      "titleHtml": "Build<br>Production Services",
+      "descHtml": "Ship Python/FastAPI services, reusable retrieval and inference APIs, and React features that connect product workflows to LLMs without duplicating service logic."
     },
     {
-      "titleHtml": "Ship at<br>Enterprise Scale",
-      "descHtml": "Deploy containerized inference on EKS with zero-trust networking, federated learning, and observability for LLM latency, retrieval quality, and drift."
+      "titleHtml": "Operate at<br>Scale",
+      "descHtml": "Own Kubernetes deployments, CI/CD, observability, and incident response. Tune GPU utilization, latency, and reliability for AI workloads in production."
     }
   ],
   "sections": {
     "story-gamification-hero": {
-      "titleHtml": "Senior AI/ML<br>Engineer",
-      "descHtml": "Engineering leader with 15+ years in data-intensive software, intelligent applications, search, analytics, and enterprise AI across healthcare, financial services, forestry, and regulated environments.<br>Hands-on across predictive modeling, NLP, RAG, vector search, LLM evaluation, agentic workflows, and secure production integration — reducing manual work up to <strong>70%</strong>."
+      "titleHtml": "Senior Full-Stack<br>&amp; AI/ML Engineer",
+      "descHtml": "15+ years in software engineering and 6+ years building production ML and applied AI systems, with staff-level ownership across architecture, hands-on development, evaluation, deployment, and production operations.<br>Hands-on with LLMs, RAG, embeddings, retrieval and ranking, agent workflows, Python/FastAPI, model serving, Kubernetes, and MLOps — improving GPU utilization <strong>~35%</strong> and cutting retrieval latency <strong>15%</strong>."
     },
     "story-gamification-battle-pass": {
-      "titleHtml": "GenAI &amp; RAG<br class=\"keep-mobile\">Systems",
-      "descHtml": "Built healthcare clinical intelligence on fine-tuned LLMs and Qdrant RAG, forestry operations platforms with LangChain retrieval, and Google-scale semantic search with BERT-based ranking."
+      "titleHtml": "LLM &amp; RAG<br class=\"keep-mobile\">Systems",
+      "descHtml": "Built medical-record retrieval that grounds LLM applications at Novawave, moved customer-facing enterprise LLM applications from proof of concept into production at Larynx, and standardized ML delivery with MLflow at NextEra Energy."
     },
     "story-gamification-quests": {
-      "titleHtml": "GenAI &amp; RAG<br class=\"keep-mobile\">Pipelines"
+      "titleHtml": "LLM &amp; RAG<br class=\"keep-mobile\">Systems"
     },
     "story-gamification-ranks": {
-      "titleHtml": "Deep<br class=\"keep-mobile\">Learning",
-      "descHtml": "PyTorch, computer vision, graph neural networks, XGBoost, LightGBM, and multi-modal fusion for clinical imaging, wound segmentation, forecasting, and search relevance."
+      "titleHtml": "Production<br class=\"keep-mobile\">ML",
+      "descHtml": "PyTorch, vLLM, model serving, and inference optimization. Feature engineering, anomaly detection, time-series forecasting, and recommendation and ranking systems for energy, logistics, and enterprise data."
     },
     "story-gamification-chests": {
-      "titleHtml": "Certifications",
-      "descHtml": "Google &amp; industry credentials supporting AI, analytics, and digital marketing leadership.<br><br><b>Google Ads Search Certification</b> (2026–2027)<br><b>Google Analytics Certification</b> (2026–2027)<br><b>Indeed Certified Partner</b> (2019–Present)<br><b>Google Certified Google Ads Partner</b> (2013)"
+      "titleHtml": "Staff-Level<br>Ownership",
+      "descHtml": "Technical ownership from design through production operations.<br><br><b>Architecture &amp; code reviews</b> across application, retrieval, and model-provider layers<br><b>CI/CD &amp; Kubernetes</b> deployment automation for AI services<br><b>Observability</b> with retries, timeouts, health checks, and SLO monitoring<br><b>Incident response</b> and performance optimization for GPU workloads"
     },
     "story-gamification-leaderboard": {
       "titleHtml": "Top Skills",
-      "descHtml": "Python, RAG/LLM engineering, PyTorch, GCP &amp; AWS MLOps, vector search, and production GenAI — 15+ years across healthcare, search, forestry, and enterprise platforms."
+      "descHtml": "Python, LLM and RAG engineering, FastAPI, PyTorch, and Kubernetes — 15+ years across healthcare AI, enterprise LLM applications, energy, logistics, fintech, and cloud platforms."
     },
     "story-rewards-hero": {
-      "logo": "reddress-medical.png",
-      "logoAlt": "RedDress Medical",
-      "titleHtml": "RedDress Medical",
-      "descHtml": "Principal AI/ML &amp; Generative AI Solutions Engineer leading CHIP — a secure clinical healthcare intelligence platform for automated wound care workflows.",
-      "metaChips": ["Principal AI/ML Engineer", "Ponte Vedra Beach, FL", "Sep 2024 – Jun 2026"],
+      "logo": "novawave.png",
+      "logoAlt": "Novawave LLC",
+      "titleHtml": "Novawave LLC",
+      "descHtml": "Senior Applied AI/ML Engineer leading architecture, core infrastructure, and delivery of AI services for Ferrum Health medical-record retrieval.",
+      "metaChips": [
+        "Senior Applied AI/ML Engineer",
+        "Remote · Spokane, WA",
+        "Aug 2025 – Present"
+      ],
       "bullets": [
-        "Architected CHIP, a cloud-native medical analytics platform for automated biological wound care and ActiGraft product suites",
-        "Engineered fine-tuned Llama-3-8B / BioGPT pipelines with Pydantic schema enforcement — cutting nurse charting overhead <strong>70%</strong>",
-        "Designed RAG with Qdrant and bge-reranker-large with metadata tenant isolation for FDA guideline retrieval",
-        "Built multi-modal LLM + CLIP ViT-L/14 fusion for bedside wound imagery and unstructured lab biomarker analysis",
-        "Developed PyTorch U-Net + ResNet-50 segmentation achieving <strong>0.93 Dice</strong> on ulcer tissue matrices",
-        "Deployed federated learning with Flower/NVIDIA FLARE and zero-trust AWS EKS architecture with HL7/FHIR exchange"
+        "Lead architecture and delivery of AI services for medical-record retrieval, from evidence selection and LLM inference to product integration and production operations",
+        "Designed embedding-based retrieval with candidate selection, ranking, reranking, and context filtering — reducing retrieval latency <strong>15%</strong>",
+        "Built shared retrieval and inference APIs and model-provider integrations that cut duplicate model API calls <strong>20%</strong>",
+        "Improved GPU utilization <strong>~35%</strong> through model-serving and workload optimization; own CI/CD, Kubernetes deployment automation, and production troubleshooting"
       ]
     },
     "story-rewards-referral": {
-      "logo": "reddress-medical.png",
-      "logoAlt": "RedDress Medical",
-      "titleHtml": "CHIP Platform",
-      "descHtml": "Clinical Healthcare Intelligence Platform — multi-modal GenAI backend for regulated medical workflows.",
-      "metaChips": ["Healthcare GenAI", "RAG · CV · Graph ML · Federated Learning"],
+      "logo": "larynx.png",
+      "logoAlt": "Larynx",
+      "titleHtml": "Larynx",
+      "descHtml": "Senior AI/ML Engineer — moved customer-facing enterprise LLM applications from proof of concept into scalable production.",
+      "metaChips": [
+        "Senior AI/ML Engineer",
+        "Remote · New York, NY",
+        "May 2023 – Jul 2025"
+      ],
       "bullets": [
-        "Knowledge graph via Neo4j + GCN in PyTorch Geometric mapping patient co-morbidities for wound-healing timeline prediction",
-        "LightGBM models paired with graph features for clinical decision support across hospital networks",
-        "Istio service mesh (mTLS) and containerized microservices on Amazon EKS for secure medical data exchange",
-        "Production guardrails: schema enforcement, tenant isolation, and HIPAA/GDPR-compliant decentralized model updates"
+        "Built customer-facing LLM features over enterprise data using embeddings, RAG, and prompt engineering for grounded generation",
+        "Designed evidence-constrained answer generation with context filtering and explicit insufficient-information handling — cutting the unsupported-answer rate <strong>15%</strong>",
+        "Developed Python/FastAPI services and reusable retrieval and inference APIs, keeping AI service logic separate from product application code",
+        "Hardened prototypes with automated tests, containerized Kubernetes releases, scaling, and monitoring — reducing release-preparation time <strong>20%</strong>"
       ]
     },
     "story-rewards-cashback": {
-      "logo": "silvifor.png",
-      "logoAlt": "Silvifor Resource Consultants",
-      "titleHtml": "Silvifor",
-      "descHtml": "Senior AI/ML &amp; Data Solutions Engineer — Forest Operations Intelligence Platform for geospatial analytics and field operations.",
-      "metaChips": ["Senior AI/ML Engineer", "Jun 2021 – Sep 2024", "Forestry &amp; Geospatial"],
+      "logo": "nextera.png",
+      "logoAlt": "NextEra Energy",
+      "titleHtml": "NextEra Energy",
+      "descHtml": "Lead Machine Learning Engineer — led an engineering team delivering production ML services for the NextEra 360 energy management platform.",
+      "metaChips": [
+        "Lead ML Engineer",
+        "Remote · Juno Beach, FL",
+        "Jun 2021 – Apr 2023"
+      ],
       "bullets": [
-        "Built Python, SQL, Airflow, PostgreSQL, and PostGIS pipelines for field reports, milestones, weather, and spatial records",
-        "Trained Scikit-learn, XGBoost, and LightGBM models for delay risk and workload forecasting — improving planning <strong>18–22%</strong>",
-        "Developed LangChain RAG for historical report retrieval, issue extraction, and natural-language search with human review",
-        "Shipped FastAPI services and React/Next.js dashboards — reducing recurring reporting effort <strong>~30%</strong>"
+        "Led development of ML services for energy asset analysis and optimization, turning operational telemetry requirements into deployable APIs",
+        "Designed Python pipelines connecting generation, consumption, and operational data with model inference — cutting pipeline runtime <strong>20%</strong>",
+        "Implemented MLflow experiment tracking and model registries, reducing model-handoff time <strong>25%</strong> with reproducible deployments",
+        "Owned deployment, model monitoring, and support while setting technical direction on architecture, reliability, testing, and CI/CD"
       ]
     },
     "story-rewards-staking": {
-      "logo": "google.png",
-      "logoAlt": "Google",
-      "titleHtml": "Google",
-      "descHtml": "LLM evaluation, Gemini tooling, and BERT-based search ranking — semantic query understanding at Google scale.",
-      "metaChips": ["Search &amp; Gemini", "2018 – 2024", "Query Understanding · Ranking"],
+      "logo": "datex.png",
+      "logoAlt": "Datex",
+      "titleHtml": "Datex",
+      "descHtml": "Senior ML Engineer and Senior Software Engineer on the FootPrint WMS — predictive services and full-stack pack verification for warehouse operations.",
+      "metaChips": [
+        "Senior ML Engineer · Senior Software Engineer",
+        "Clearwater, FL",
+        "Dec 2017 – May 2021"
+      ],
       "bullets": [
-        "Contributed to semantic query understanding for ambiguous, long-tail, and conversational searches using BERT-based approaches",
-        "Combined dense retrieval with BM25 and FAISS/ScanN-style vector search; improved serving via distillation and quantization",
-        "Built Python utilities for prompt regression, grounding checks, and automated evaluation across diverse Gemini-style examples",
-        "Defined evaluation criteria for accuracy, grounding, format compliance, and unsafe responses before broader rollout"
+        "Applied ML to warehouse and inventory telemetry; built Python pipelines connecting predictive workflows with WMS data, REST APIs, and databases — cutting processing time <strong>15%</strong>",
+        "Automated recurring inventory and logistics processing, saving <strong>4 hours</strong> of manual work per week",
+        "Delivered barcode-assisted pack verification across web UI, REST API, business logic, and database — reducing verification time <strong>10%</strong>",
+        "Profiled and optimized SQL and legacy verification paths, reducing query execution time <strong>20%</strong> with regression coverage"
       ]
     },
     "story-rewards-community": {
-      "logo": "designright4u.png",
-      "logoAlt": "Design Right 4 U",
-      "titleHtml": "Leadership &amp;<br>Entrepreneurship",
-      "descHtml": "Founder and engineering lead delivering data-driven products — from early search optimization to predictive ML platforms.",
-      "metaChips": ["Founder · Design Right 4 U", "2009 – Present", "Jacksonville, FL"],
+      "logo": "microsoft.png",
+      "logoAlt": "Microsoft",
+      "titleHtml": "Earlier<br>Career",
+      "descHtml": "<b>FIS</b> · Senior Full-Stack &amp; Backend Engineer (2015 – 2017) — Java payment services for the Open Payment Framework, reducing p95 latency <strong>15%</strong><br><b>Microsoft</b> · Full Stack &amp; Backend Engineer (2011 – 2015) — Azure Preview Portal features and Windows Azure Java integrations, cutting workflow load time <strong>15%</strong><br><b>Google</b> · Software Engineering Intern (2010) — Gmail calling and Google Voice integration backend",
+      "metaChips": [
+        "FIS · Microsoft · Google",
+        "Jacksonville, FL · Redmond, WA · Kirkland, WA",
+        "2010 – 2017"
+      ],
       "bullets": [
-        "Founded Design Right 4 U — web platforms, analytics, search optimization, marketing automation, and customer-acquisition systems",
-        "Pioneered ML transition (2016–2018): predictive pipelines with Scikit-learn for lead scoring, churn, and campaign forecasting",
-        "Directed WaMu enterprise programs (&gt;$2M) improving on-time delivery <strong>~20%</strong> and reducing post-release defects <strong>15–25%</strong>",
-        "Texas Tech B.S. in Computer/Information Technology Administration and Management"
+        "FIS: profiled payment microservices and database interactions, reducing p95 service latency 15% while preserving transaction correctness",
+        "Microsoft: built reusable endpoints and shared components across 3 Azure portal features, reducing workflow load time 15%",
+        "Microsoft: resolved 12 defects and added 20 regression tests across Java backend components for Windows Azure integrations",
+        "Google: wrote 15 automated tests and resolved 5 backend defects in the Gmail calling and Google Voice integration"
       ]
     },
     "story-airdrops-post-hero": {
       "titleHtml": "Tech<br>Stack",
-      "descHtml": "Python, LangChain, PyTorch, Gemini, Vertex AI, FastAPI, Airflow,<br>GCP, AWS, Qdrant, FAISS, Docker, Kubernetes, and full-stack ML platform delivery."
+      "descHtml": "Python, FastAPI, PyTorch, vLLM, LangChain, LangGraph, pgvector,<br>React, Next.js, AWS, GCP, Azure, Kubernetes, Terraform, MLflow, and full-stack production delivery."
     },
     "story-airdrops-post-battlepass": {
       "titleHtml": "Languages &amp; Tools"
     },
     "story-airdrops-post-seasons": {
       "titleHtml": "Impact",
-      "descHtml": "70% less nurse charting · 0.93 Dice wound segmentation · 18–22% better planning accuracy · 30% less reporting effort · 20% faster enterprise delivery."
+      "descHtml": "~35% better GPU utilization · 20% fewer duplicate model calls · 15% lower retrieval latency · 15% fewer unsupported answers · 25% faster model handoff · 20% faster releases."
     },
     "story-airdrops-pre-hero": {
       "titleHtml": "Education",
-      "descHtml": "Texas Tech University — computer and information technology administration and management.",
+      "descHtml": "University of Washington — Master's and Bachelor of Science in Computer Science.",
       "education": [
         {
-          "logo": "texas-tech.png",
-          "school": "Texas Tech University",
-          "degree": "B.S. Computer/Information Technology Administration and Management",
-          "years": "Degree completed"
+          "logo": "uw.png",
+          "school": "University of Washington",
+          "degree": "Master's Degree, Computer Science",
+          "years": "Sep 2009 – Jun 2011"
+        },
+        {
+          "logo": "uw.png",
+          "school": "University of Washington",
+          "degree": "Bachelor of Science, Computer Science",
+          "years": "Sep 2005 – Jun 2009"
         }
       ]
     },
     "story-airdrops-pre-engagement": {
       "titleHtml": "Always<br>Learning",
-      "descHtml": "Continuously exploring new AI, LLM, and cloud technologies — from Gemini evaluation and agentic workflows to production MLOps — to deliver greater impact as a hands-on technical leader."
+      "descHtml": "Continuously evaluating new LLM, retrieval, and inference tooling — from agent frameworks and evaluation harnesses to GPU serving optimizations — and bringing what works into production."
     }
   },
   "end_hero": {
@@ -210,8 +334,17 @@
     "descHtml": ""
   },
   "seasons": [
-    { "season": "Healthcare GenAI", "sprint": "Current" },
-    { "season": "Google Search", "sprint": "2018–2024" },
-    { "season": "Founder & ML Lead", "sprint": "2009–Present" }
+    {
+      "season": "Applied AI",
+      "sprint": "Current"
+    },
+    {
+      "season": "Enterprise LLMs",
+      "sprint": "2023–2025"
+    },
+    {
+      "season": "Production ML",
+      "sprint": "2020–2023"
+    }
   ]
 }

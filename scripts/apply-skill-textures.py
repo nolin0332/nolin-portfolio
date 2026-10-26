@@ -18,7 +18,9 @@ CURSOR_ASSETS = Path(
 LOGOS_OUT = PUBLIC / "assets" / "logos"
 
 LEADERBOARD_SIZE = 160
-LEADERBOARD_WHITE_BG = frozenset({"python", "pytorch", "aws", "rag", "azure-ai"})
+LEADERBOARD_WHITE_BG = frozenset(
+    {"python", "pytorch", "aws", "rag", "azure-ai", "fastapi", "kubernetes", "react"}
+)
 QUEST_1_SIZE = (520, 720)
 QUEST_23_SIZE = (560, 788)
 QUEST_LOGO_PAD = {
@@ -588,6 +590,9 @@ def color_for_logo(name: str, profile: dict) -> str | None:
         "healthcare-rag": "#00796B",
         "energy-ml": "#FF6F00",
         "grid-forecasting": "#455A64",
+        "fastapi": "#009688",
+        "kubernetes": "#326CE5",
+        "react": "#20232A",
     }
     return defaults.get(name)
 

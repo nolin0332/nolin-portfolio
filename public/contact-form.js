@@ -12,7 +12,7 @@
 
   const defaultBtnLabel = submitBtn ? submitBtn.textContent.trim() : "Send message";
 
-  const recipient = form.dataset.recipient || "michael.trent.dev@gmail.com";
+  const recipient = form.dataset.recipient || "whitbecknolin@gmail.com";
 
   const web3Key = (form.dataset.web3Key || "").trim();
 

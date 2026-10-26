@@ -1,14 +1,18 @@
 (function () {
   // JotForm conversational agent (chatbot widget)
-  // Share URL: https://www.jotform.com/agent/019f01f41cb1710687a41b71d271cc48dd5d
-  const AGENT_ID = "019f01f41cb1710687a41b71d271cc48dd5d";
+  // Share URL: https://www.jotform.com/agent/01a175e78a9870008870aa27d5d4076d199d
+  const AGENT_ID = "01a175e78a9870008870aa27d5d4076d199d";
   const AGENT_CHAT_BG = "#F4FEFF";
   const FOOTER_TEXT_COLOR = "#00433A";
-  const CONTACT_LINE = "CTO: Molly Youngblood : +1 (904) 314-4057";
+  const CONTACT_LINES = [
+    "Nolin Whitbeck \u00b7 Senior Applied AI/ML Engineer",
+    "+1 (904) 290-1103 \u00b7 whitbecknolin@gmail.com",
+  ];
   const DEFAULT_RADIUS = "20px";
   const COVER_ID = "jf-jotform-branding-cover";
-  // From widget bottom up to the red line (just below Chat/Voice labels).
-  const BRANDING_STRIP_HEIGHT = 28;
+  // From the widget bottom up to just below the Chat/Voice labels. Covers both the
+  // Jotform branding strip and the "This chat is recorded..." notice inside the iframe.
+  const BRANDING_STRIP_HEIGHT = 56;
   const COVER_DROP_CM = 10;
   const COVER_ANIMATION_MS = 550;
 
@@ -42,7 +46,7 @@
     "z-index:2147483647;pointer-events:auto;cursor:default;" +
     "border-top-left-radius:0;border-top-right-radius:0;" +
     "overflow:hidden;box-sizing:border-box;" +
-    "align-items:flex-end;justify-content:center;padding:0 10px 5px;" +
+    "align-items:flex-end;justify-content:center;padding:0 10px 6px;" +
     "background:" +
     AGENT_CHAT_BG +
     ";" +
@@ -74,7 +78,12 @@
     "#" +
     COVER_ID +
     " .jf-branding-contact{" +
-    "font:500 13px/1.3 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;" +
+    "display:flex;flex-direction:column;align-items:center;gap:1px;max-width:100%;" +
+    "}" +
+    "#" +
+    COVER_ID +
+    " .jf-branding-contact span{" +
+    "display:block;font:500 12px/1.3 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;" +
     "color:" +
     FOOTER_TEXT_COLOR +
     ";" +
@@ -147,9 +156,13 @@
     if (!cover) {
       cover = document.createElement("div");
       cover.id = COVER_ID;
-      var label = document.createElement("span");
+      var label = document.createElement("div");
       label.className = "jf-branding-contact";
-      label.textContent = CONTACT_LINE;
+      CONTACT_LINES.forEach(function (text) {
+        var line = document.createElement("span");
+        line.textContent = text;
+        label.appendChild(line);
+      });
       cover.appendChild(label);
       cover.addEventListener(
         "click",

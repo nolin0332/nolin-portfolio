@@ -19,11 +19,11 @@ print("title:", re.search(r"<title>([^<]+)", h).group(1))
 print("HTML integrity:", "OK" if not errors else errors)
 
 checks = {
-    "story-gamification-hero": ("AI / ML", "12+ years building production LLM"),
-    "story-gamification-leaderboard": ("Top Skills", "Python, RAG/LLM engineering"),
-    "story-rewards-referral": ("Healthcare RAG", "LangChain"),
+    "story-gamification-hero": ("Senior Full-Stack", "15+ years in software engineering"),
+    "story-gamification-leaderboard": ("Top Skills", "Python, LLM and RAG engineering"),
+    "story-rewards-referral": ("Larynx", "Senior AI/ML Engineer"),
     "story-gamification-quests-quest-number": ("Python", None),
-    "end-hero": ("Let's", "michael.trent039@gmail.com"),
+    "end-hero": ("Let's", "whitbecknolin@gmail.com"),
 }
 
 for sid, (need_title, need_desc) in checks.items():

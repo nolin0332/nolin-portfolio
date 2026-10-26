@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "public" / "favicon"
-LETTER = "M"
+LETTER = "N"
 ORANGE_LIGHT = (255, 176, 60)
 ORANGE_DARK = (232, 93, 40)
 FONT_CANDIDATES = (
@@ -83,6 +83,9 @@ def main() -> None:
     icon16.save(OUT / "favicon-16x16.png")
     icon32.save(OUT / "favicon-32x32.png")
     icon180.save(OUT / "apple-touch-icon.png")
+    make_icon(192).save(OUT / "android-chrome-192x192.png")
+    make_icon(512).save(OUT / "android-chrome-512x512.png")
+    make_icon(150).save(OUT / "mstile-150x150.png")
     icon16.save(
         OUT / "favicon.ico",
         format="ICO",

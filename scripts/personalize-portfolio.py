@@ -876,6 +876,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
         "michael.trent039@gmail.com",
         "michael.trent.dev@gmail.com",
         "pzscvserpw080@hotmail.com",
+        "molly.youngblood.eng@gmail.com",
     )
     for old_email in legacy_emails:
         html = html.replace(old_email, email)
@@ -884,6 +885,7 @@ def apply_contact_details(html: str, profile: dict) -> str:
         "+1 (720) 358-1119",
         "+1 (972) 301 7727",
         "+1 (904) 552-5558",
+        "+1 (904) 314-4057",
     )
     for old_phone in legacy_phones:
         html = html.replace(old_phone, phone)
@@ -1206,7 +1208,6 @@ def apply_index(profile: dict) -> None:
             "NewGen Strategies": "RedDress Medical",
         }[legacy_name])
 
-    html = html.replace("Senior Software Engineer", p["title"])
     html = html.replace("Distributed Systems & Backend Platforms", "GenAI, RAG & Production ML")
     html = html.replace("Miami, FL", p["location"])
     html = html.replace("Denver, CO", p["location"])
@@ -1744,39 +1745,36 @@ def apply_meta(profile: dict) -> None:
 
 
     if PACKAGE.exists():
-
         text = PACKAGE.read_text(encoding="utf-8")
-
+        slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+        text = re.sub(r'"name"\s*:\s*"[^"]*"', f'"name": "{slug}-portfolio"', text, count=1)
         text = re.sub(
-
             r'"description"\s*:\s*"[^"]*"',
-
             f'"description": "Immersive WebGL portfolio — {name}, {p["title"]}"',
-
             text,
-
             count=1,
-
         )
-
         PACKAGE.write_text(text, encoding="utf-8")
 
-
-
     if README.exists():
-
         README.write_text(
-
             f"# {name} — Portfolio\n\n"
-
-            f"Immersive WebGL portfolio personalized for **{p['title']}**.\n\n"
-
-            f"## Personalize\n\n"
-
-            f"```bash\nnpm run sync-assets\nnpm run personalize\n```\n",
-
+            f"Immersive WebGL portfolio for **{name}**, {p['title']}. "
+            "Includes an embedded JotForm conversational agent.\n\n"
+            "## Run (Windows)\n\n"
+            "**Easiest:** double-click **`start.bat`** in this folder.\n\n"
+            "Or in a terminal:\n\n"
+            "```bash\nnpm install\nnpm run dev\n```\n\n"
+            "Open **http://127.0.0.1:5138/**\n\n"
+            "## Personalize\n\n"
+            "Edit `scripts/resume-profile.json`, then:\n\n"
+            "```bash\nnpm run sync-assets\nnpm run personalize\n```\n\n"
+            "Regenerate branding assets after a name change:\n\n"
+            "```bash\nnpm run generate-michael-logo\n"
+            "python scripts/generate-favicon.py\n"
+            "python scripts/generate-cover.py\n"
+            "npm run generate-trailer   # hero trailer videos\n```\n",
             encoding="utf-8",
-
         )
 
 
